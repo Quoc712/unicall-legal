@@ -1,0 +1,553 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chính sách quyền riêng tư – Uni Call</title>
+<meta name="description" content="Uni Call dùng những quyền nào, để làm gì, dữ liệu nào ở lại trên điện thoại và dữ liệu nào rời khỏi máy.">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#1f6fe0" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0a111d" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 108 108"%3E %3Cdefs%3E%3ClinearGradient id="gf" x1="18" y1="10" x2="90" y2="100" gradientUnits="userSpaceOnUse"%3E %3Cstop offset="0" stop-color="#2B7DF0"/%3E%3Cstop offset="1" stop-color="#0FA3B1"/%3E%3C/linearGradient%3E%3C/defs%3E %3Crect width="108" height="108" rx="26" fill="url%28#gf%29"/%3E %3Cpath fill="#fff" fill-opacity=".9" d="M45 37l1.5-11.5Q47 23 49.5 23h9q2.5 0 3 2.5L63 37zM45 71l1.5 11.5Q47 85 49.5 85h9q2.5 0 3-2.5L63 71z"/%3E %3Cpath fill="#fff" d="M74 50h3a1.5 1.5 0 0 1 1.5 1.5v5A1.5 1.5 0 0 1 77 58h-3z"/%3E %3Ccircle cx="54" cy="54" r="21" fill="#fff"/%3E%3Ccircle cx="54" cy="54" r="17" fill="#0B3D91"/%3E %3Cg transform="translate%2842.6 42.6%29 scale%28.95%29"%3E%3Cpath fill="#fff" d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/%3E%3C/g%3E %3Ccircle cx="68.5" cy="39.5" r="6" fill="#FBBC04" stroke="#1F6FE0" stroke-width="2"/%3E %3C/svg%3E">
+<link rel="alternate" hreflang="vi" href="../vi/index.html"><link rel="alternate" hreflang="en" href="../en/index.html">
+<style>
+:root{
+  --bg:#f4f7fb;--surface:#ffffff;--surface-2:#edf3fa;--text:#0e1a2b;--muted:#4b5b72;--line:#d9e2ee;
+  --brand:#1f6fe0;--brand-2:#0fa3b1;--accent:#f5b400;--link:#1557c4;--bar:rgba(244,247,251,.92);
+  --keep:#0d7466;--keep-bg:#e2f4f0;--out:#1a5fc8;--out-bg:#e6effd;--never:#a93f17;--never-bg:#fbeae3;
+  --hero-a:#2b7df0;--hero-b:#0fa3b1;
+  --shadow:0 1px 2px rgba(14,26,43,.05),0 6px 18px rgba(14,26,43,.06);--radius:16px;color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#0a111d;--surface:#111b2b;--surface-2:#172437;--text:#e5ecf6;--muted:#a3b1c6;--line:#25354d;
+    --brand:#5b9dff;--brand-2:#35c2cd;--accent:#ffcc3d;--link:#86b9ff;--bar:rgba(10,17,29,.92);
+    --keep:#4fd3bb;--keep-bg:#0f2f2b;--out:#8ab7ff;--out-bg:#14263f;--never:#ff9c70;--never-bg:#381c12;
+    --hero-a:#1a4fa3;--hero-b:#0a6a73;--shadow:none;color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0a111d;--surface:#111b2b;--surface-2:#172437;--text:#e5ecf6;--muted:#a3b1c6;--line:#25354d;
+  --brand:#5b9dff;--brand-2:#35c2cd;--accent:#ffcc3d;--link:#86b9ff;--bar:rgba(10,17,29,.92);
+  --keep:#4fd3bb;--keep-bg:#0f2f2b;--out:#8ab7ff;--out-bg:#14263f;--never:#ff9c70;--never-bg:#381c12;
+  --hero-a:#1a4fa3;--hero-b:#0a6a73;--shadow:none;color-scheme:dark;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans","Helvetica Neue",Arial,sans-serif;overflow-wrap:break-word}
+a{color:var(--link);text-underline-offset:2px}
+a:focus-visible,summary:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:6px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 16px}
+.skip{position:absolute;left:-9999px;top:8px;z-index:100;background:var(--surface);color:var(--text);padding:8px 14px;border-radius:8px;border:2px solid var(--brand)}
+.skip:focus{left:16px}
+/* Thanh trên */
+.topbar{position:sticky;top:0;z-index:20;background:var(--bar);-webkit-backdrop-filter:saturate(1.4) blur(10px);backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid var(--line)}
+.topbar-in{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;min-height:58px;padding-top:6px;padding-bottom:6px}
+.brand{display:flex;align-items:center;gap:9px;font-weight:700;font-size:1.05rem;color:var(--text);text-decoration:none;letter-spacing:-.01em}
+.logo{display:block;flex:none;border-radius:22%}
+.docnav{display:flex;flex-wrap:wrap;gap:4px;margin-left:auto}
+.docnav a{padding:6px 12px;border-radius:999px;font-size:.9rem;color:var(--muted);text-decoration:none;white-space:nowrap}
+.docnav a:hover{color:var(--text);background:var(--surface-2)}
+.docnav a[aria-current]{background:var(--surface-2);color:var(--text);font-weight:600}
+.lang{display:flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;flex:none}
+.lang a{padding:4px 11px;font-size:.78rem;font-weight:700;letter-spacing:.06em;color:var(--muted);text-decoration:none}
+.lang a[aria-current]{background:var(--brand);color:#fff}
+@media (max-width:639px){
+  .hide-sm{display:none}
+  .docnav{order:3;width:100%;margin-left:0}
+  .lang{margin-left:auto}
+}
+/* Băng đầu trang */
+.hero{position:relative;overflow:hidden;color:#fff;background:linear-gradient(135deg,var(--hero-a),var(--hero-b));padding:40px 0 46px}
+.hero::before,.hero::after{content:"";position:absolute;border-radius:50%;pointer-events:none}
+.hero::before{right:-90px;top:-110px;width:340px;height:340px;border:30px solid rgba(255,255,255,.09)}
+.hero::after{right:150px;bottom:-70px;width:120px;height:120px;background:rgba(251,188,4,.22)}
+.hero .wrap{position:relative;z-index:1}
+.eyebrow{margin:0;font-size:.8rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;opacity:.9}
+.hero h1{font-size:clamp(1.7rem,5.4vw,2.6rem);line-height:1.18;letter-spacing:-.015em;margin:.25em 0 .35em}
+.lede{max-width:44rem;margin:0;font-size:1.05rem;opacity:.96}
+.chips{list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 0;padding:0}
+.chips li{background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.3);border-radius:999px;padding:3px 12px;font-size:.84rem}
+/* Bố cục */
+.layout{display:grid;grid-template-columns:minmax(0,1fr);gap:24px;padding-top:24px;padding-bottom:40px}
+@media (min-width:960px){.layout{grid-template-columns:232px minmax(0,1fr);gap:36px;padding-top:32px}}
+.toc-side{display:none}
+@media (min-width:960px){
+  .toc-side{display:block;position:sticky;top:78px;align-self:start;max-height:calc(100vh - 96px);overflow:auto;font-size:.9rem}
+  .toc-mob{display:none}
+}
+.toc-title{margin:0 0 8px;font-size:.76rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.toc ol{list-style:none;margin:0;padding:0}
+.toc li a{display:block;padding:5px 10px;border-left:2px solid var(--line);color:var(--muted);text-decoration:none;line-height:1.4}
+.toc li a:hover{color:var(--text);border-left-color:var(--brand)}
+.toc-mob{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:12px 16px}
+.toc-mob summary{cursor:pointer;font-weight:600}
+.toc-mob ol{margin-top:10px}
+main{min-width:0}
+/* Mục */
+.sec{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:22px 18px;margin:0 0 18px;box-shadow:var(--shadow);scroll-margin-top:118px}
+@media (min-width:640px){.sec{padding:28px 32px;scroll-margin-top:82px}}
+.sec h2{display:flex;align-items:center;gap:12px;margin:0 0 12px;font-size:1.28rem;line-height:1.3;letter-spacing:-.01em}
+.sec h2::before{content:"";flex:none;width:10px;height:10px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 3px var(--surface),0 0 0 5px var(--brand)}
+.sec h3{margin:0;font-size:1.04rem;line-height:1.4}
+.sec p,.sec ul,.sec ol{margin:.55em 0}
+.sec ul,.sec ol{padding-left:1.25em}
+.sec li{margin:.3em 0}
+.sec > :last-child{margin-bottom:0}
+.muted{color:var(--muted)}
+.small{font-size:.92rem}
+.mono{font-family:ui-monospace,SFMono-Regular,Consolas,"Liberation Mono",monospace;font-size:.88em;background:var(--surface-2);padding:1px 6px;border-radius:6px;overflow-wrap:anywhere}
+.callout{background:var(--surface-2);border-left:4px solid var(--brand-2);border-radius:10px;padding:12px 16px;margin:14px 0}
+.callout p{margin:.3em 0}
+/* Ba ô tóm tắt */
+.tiles{display:grid;grid-template-columns:minmax(0,1fr);gap:12px;margin-top:16px}
+@media (min-width:700px){.tiles{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.tile{border-radius:14px;padding:16px}
+.tile p{margin:0}
+.tile-k{display:flex;align-items:center;gap:8px;font-weight:700;margin:0 0 6px!important}
+.tile-k svg{flex:none}
+.tile-keep{background:var(--keep-bg)}.tile-keep .tile-k{color:var(--keep)}
+.tile-out{background:var(--out-bg)}.tile-out .tile-k{color:var(--out)}
+.tile-never{background:var(--never-bg)}.tile-never .tile-k{color:var(--never)}
+/* Nguyên tắc */
+.principles{list-style:none;padding:0!important;display:grid;grid-template-columns:minmax(0,1fr);gap:12px;counter-reset:p}
+@media (min-width:700px){.principles{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.principles li{counter-increment:p;position:relative;margin:0;padding:14px 16px 14px 58px;border:1px solid var(--line);border-radius:14px}
+.principles li::before{content:counter(p);position:absolute;left:16px;top:14px;width:30px;height:30px;border-radius:50%;display:grid;place-items:center;font-weight:800;color:#fff;background:linear-gradient(135deg,var(--hero-a),var(--hero-b))}
+.principles strong{display:block}
+/* Thẻ quyền / thẻ giấy phép */
+.cards{display:grid;gap:12px;margin-top:14px}
+.card{border:1px solid var(--line);border-radius:14px;padding:16px}
+.card-h{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:6px 12px;margin-bottom:10px}
+.tag{display:inline-block;font-size:.74rem;font-weight:700;padding:2px 10px;border-radius:999px;background:var(--out-bg);color:var(--out)}
+.tag.off{background:var(--surface-2);color:var(--muted)}
+.tag.opt{background:var(--keep-bg);color:var(--keep)}
+.card dl,.flow dl{margin:0;display:grid;grid-template-columns:minmax(0,1fr);gap:2px 18px}
+@media (min-width:640px){.card dl,.flow dl{grid-template-columns:168px minmax(0,1fr)}}
+.card dt,.flow dt{font-weight:600;font-size:.88rem;color:var(--muted);padding-top:1px}
+.card dd,.flow dd{margin:0 0 8px}
+.card dd:last-child,.flow dd:last-child{margin-bottom:0}
+.card dd ul{margin:.2em 0;padding-left:1.1em}
+.note{margin:10px 0 0!important;padding-top:10px;border-top:1px dashed var(--line);font-size:.92rem;color:var(--muted)}
+/* Luồng dữ liệu */
+.flows{counter-reset:f;margin-top:8px}
+.flow{counter-increment:f;display:grid;grid-template-columns:34px minmax(0,1fr);gap:12px;padding:16px 0;border-top:1px solid var(--line)}
+.flow:first-child{border-top:0;padding-top:6px}
+.flow::before{content:counter(f);width:32px;height:32px;border-radius:50%;display:grid;place-items:center;font-weight:800;background:var(--out-bg);color:var(--out)}
+.flow h3{margin:4px 0 8px}
+/* Danh sách có / không */
+.yes,.no{list-style:none;padding-left:0!important}
+.yes li,.no li{position:relative;padding-left:1.7em}
+.yes li::before,.no li::before{position:absolute;left:0;top:0;font-weight:800}
+.yes li::before{content:"\2713";color:var(--keep)}
+.no li::before{content:"\2715";color:var(--never)}
+.cols{display:grid;grid-template-columns:minmax(0,1fr);gap:4px 28px}
+@media (min-width:700px){.cols{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.cols h3{margin-top:10px}
+/* Liên hệ */
+.contact{display:grid;grid-template-columns:minmax(0,1fr);gap:12px;margin-top:12px}
+@media (min-width:640px){.contact{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.contact a.c{display:block;border:1px solid var(--line);border-radius:14px;padding:14px 16px;text-decoration:none;color:var(--text)}
+.contact a.c:hover{border-color:var(--brand)}
+.contact .k{display:block;font-size:.8rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.contact .v{display:block;font-weight:600;color:var(--link);overflow-wrap:anywhere}
+.history{list-style:none;padding:0!important}
+.history li{padding:8px 0;border-top:1px solid var(--line)}
+.history li:first-child{border-top:0}
+/* Chân trang */
+.foot{border-top:1px solid var(--line);padding:22px 0 36px;font-size:.88rem;color:var(--muted)}
+.foot-in{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px 24px}
+.foot p{margin:.2em 0}
+.foot-links{display:flex;flex-wrap:wrap;gap:6px 16px}
+/* Trang chủ tài liệu */
+.home-hero{text-align:left}
+.home-hero .logo{width:64px;height:64px;margin-bottom:14px;box-shadow:0 6px 24px rgba(0,0,0,.18)}
+.docs{display:grid;grid-template-columns:minmax(0,1fr);gap:16px;padding-top:28px;padding-bottom:20px}
+@media (min-width:760px){.docs{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.doc{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:22px 20px;box-shadow:var(--shadow)}
+.doc h2{margin:0 0 4px;font-size:1.2rem}
+.doc .en{margin:0 0 10px;color:var(--muted);font-size:.95rem}
+.doc p{margin:.4em 0 14px}
+.btns{display:flex;flex-wrap:wrap;gap:8px}
+.btn{display:inline-flex;align-items:center;gap:6px;padding:9px 16px;border-radius:999px;background:var(--brand);color:#fff;text-decoration:none;font-weight:600;font-size:.94rem}
+.btn.ghost{background:transparent;color:var(--link);border:1px solid var(--line)}
+.btn:hover{filter:brightness(1.07)}
+@media print{
+  .topbar,.toc-side,.toc-mob,.skip{display:none!important}
+  .hero{background:none;color:#000;padding:0 0 12px}
+  .hero::before,.hero::after{display:none}
+  .chips li{border-color:#999;background:none}
+  .sec{box-shadow:none;break-inside:avoid-page}
+  .layout{display:block}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Bỏ qua, tới nội dung</a>
+<header class="topbar" id="top"><div class="wrap topbar-in">
+<a class="brand" href="../../index.html"><svg class="logo" width="28" height="28" viewBox="0 0 108 108" role="img" aria-label="Uni Call">
+<defs><linearGradient id="gh" x1="18" y1="10" x2="90" y2="100" gradientUnits="userSpaceOnUse">
+<stop offset="0" stop-color="#2B7DF0"/><stop offset="1" stop-color="#0FA3B1"/></linearGradient></defs>
+<rect width="108" height="108" rx="26" fill="url(#gh)"/>
+<path fill="#fff" fill-opacity=".9" d="M45 37l1.5-11.5Q47 23 49.5 23h9q2.5 0 3 2.5L63 37zM45 71l1.5 11.5Q47 85 49.5 85h9q2.5 0 3-2.5L63 71z"/>
+<path fill="#fff" d="M74 50h3a1.5 1.5 0 0 1 1.5 1.5v5A1.5 1.5 0 0 1 77 58h-3z"/>
+<circle cx="54" cy="54" r="21" fill="#fff"/><circle cx="54" cy="54" r="17" fill="#0B3D91"/>
+<g transform="translate(42.6 42.6) scale(.95)"><path fill="#fff" d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></g>
+<circle cx="68.5" cy="39.5" r="6" fill="#FBBC04" stroke="#1F6FE0" stroke-width="2"/>
+</svg><span>Uni Call</span></a>
+<nav class="docnav" aria-label="Tài liệu"><a href="../../privacy-policy/vi/index.html" aria-current="page">Quyền riêng tư</a><a href="../../terms/vi/index.html">Sở hữu trí tuệ<span class="hide-sm"> &amp; điều khoản</span></a></nav>
+<nav class="lang" aria-label="Ngôn ngữ"><a href="index.html" hreflang="vi" lang="vi" aria-current="true">VI</a><a href="../en/index.html" hreflang="en" lang="en">EN</a></nav>
+</div></header>
+<div class="hero"><div class="wrap"><p class="eyebrow">Uni Call · điện thoại &amp; đồng hồ</p><h1>Chính sách quyền riêng tư</h1><p class="lede">Cuộc gọi, tin nhắn và chỉ đường của bạn được xử lý ngay trên điện thoại để đưa lên đồng hồ. Trang này nói rõ Uni Call chạm vào dữ liệu nào, vì sao, và cái gì không bao giờ rời khỏi máy.</p><ul class="chips"><li>Hiệu lực từ 28/10/2026</li><li>Áp dụng cho Uni Call 1.0.1</li><li>Bản số 2</li></ul></div></div>
+<div class="wrap layout"><aside class="toc toc-side" aria-label="Trên trang này"><p class="toc-title">Trên trang này</p><ol><li><a href="#tom-tat">Tóm tắt trong một phút</a></li><li><a href="#gioi-thieu">Uni Call là gì, ai làm ra</a></li><li><a href="#nguyen-tac">Bốn nguyên tắc của chúng tôi</a></li><li><a href="#quyen">Mỗi quyền dùng để làm gì</a></li><li><a href="#tren-may">Dữ liệu được lưu trên điện thoại</a></li><li><a href="#roi-may">Dữ liệu rời khỏi điện thoại</a></li><li><a href="#bao-loi">Báo lỗi</a></li><li><a href="#khong-lam">Những điều Uni Call không làm</a></li><li><a href="#xoa">Giữ và xoá dữ liệu</a></li><li><a href="#tre-em">Trẻ em</a></li><li><a href="#bao-mat">Bảo mật</a></li><li><a href="#ben-thu-ba">Dịch vụ bên thứ ba</a></li><li><a href="#quyen-cua-ban">Quyền của bạn</a></li><li><a href="#thay-doi">Khi chính sách thay đổi</a></li><li><a href="#lien-he">Liên hệ</a></li></ol></aside><details class="toc toc-mob"><summary>Mục lục</summary><ol><li><a href="#tom-tat">Tóm tắt trong một phút</a></li><li><a href="#gioi-thieu">Uni Call là gì, ai làm ra</a></li><li><a href="#nguyen-tac">Bốn nguyên tắc của chúng tôi</a></li><li><a href="#quyen">Mỗi quyền dùng để làm gì</a></li><li><a href="#tren-may">Dữ liệu được lưu trên điện thoại</a></li><li><a href="#roi-may">Dữ liệu rời khỏi điện thoại</a></li><li><a href="#bao-loi">Báo lỗi</a></li><li><a href="#khong-lam">Những điều Uni Call không làm</a></li><li><a href="#xoa">Giữ và xoá dữ liệu</a></li><li><a href="#tre-em">Trẻ em</a></li><li><a href="#bao-mat">Bảo mật</a></li><li><a href="#ben-thu-ba">Dịch vụ bên thứ ba</a></li><li><a href="#quyen-cua-ban">Quyền của bạn</a></li><li><a href="#thay-doi">Khi chính sách thay đổi</a></li><li><a href="#lien-he">Liên hệ</a></li></ol></details><main id="main">
+<section id="tom-tat" class="sec">
+<h2>Tóm tắt trong một phút</h2>
+<p>Uni Call chạy trên chính điện thoại của bạn. Uni Call không có máy chủ riêng, nên không có nơi nào của chúng tôi nhận cuộc gọi, tin nhắn, danh bạ hay vị trí của bạn.</p>
+<div class="tiles">
+<div class="tile tile-keep"><p class="tile-k"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="2.5" width="12" height="19" rx="3" fill="none" stroke="currentColor" stroke-width="2"/><path d="M10 18h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Ở lại trên máy</p><p>Tên người gọi, nội dung tin nhắn, chỉ dẫn rẽ và vị trí được xử lý trong bộ nhớ tạm để đưa lên đồng hồ, rồi bỏ đi.</p></div>
+<div class="tile tile-out"><p class="tile-k"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h11M12 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Chỉ rời máy khi cần</p><p>Chữ bạn tìm, điểm đi, điểm đến và vùng bản đồ tới các dịch vụ bản đồ; tiếng nói khi trả lời tới bộ nhận dạng giọng nói của điện thoại; báo lỗi chỉ khi bạn tự gửi. Chi tiết ở mục <a href="#roi-may">Dữ liệu rời khỏi điện thoại</a>.</p></div>
+<div class="tile tile-never"><p class="tile-k"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M6 18L18 6" stroke="currentColor" stroke-width="2"/></svg>Không bao giờ</p><p>Không tài khoản, không quảng cáo, không công cụ phân tích hay theo dõi, không bán dữ liệu, không ghi âm cuộc gọi.</p></div>
+</div>
+</section>
+
+<section id="gioi-thieu" class="sec">
+<h2>Uni Call là gì, ai làm ra</h2>
+<ul>
+<li><strong>Uni Call</strong> là ứng dụng Android (mã gói <span class="mono">app.unicall.watch</span>) đưa cuộc gọi, tin nhắn và chỉ dẫn đường từ điện thoại lên đồng hồ thông minh.</li>
+<li>Gồm app trên điện thoại, app Uni Call cho đồng hồ Xiaomi / Redmi chạy Vela (đóng sẵn trong file cài đặt) và app Uni Call cho đồng hồ Amazfit (Zepp OS). Các đồng hồ khác (Wear OS, Galaxy Watch, Garmin, Huawei…) nhận qua thẻ thông báo hoặc màn hình gọi của chính đồng hồ.</li>
+<li>Uni Call do <span class="dev">Bùi Dương Quốc</span>, một nhà phát triển cá nhân tại Việt Nam, làm ra (“chúng tôi” trong trang này). Uni Call có hai bản cùng một mã nguồn: <strong>bản Google Play</strong> và <strong>bản phát hành trên web</strong>. Hai bản giống nhau trừ hai điểm, ghi rõ ở từng mục bên dưới: chỉ bản web xin quyền vị trí “Luôn cho phép” và có cách cài thẳng app lên đồng hồ Xiaomi. Đây là dự án độc lập, không thuộc và không liên kết với Zalo (VNG), Meta, LINE, Google, Samsung, Xiaomi, Huawei, Zepp Health hay Garmin.</li>
+<li>Chính sách này áp dụng cho các ứng dụng trên và cho trang web này.</li>
+</ul>
+</section>
+
+<section id="nguyen-tac" class="sec">
+<h2>Bốn nguyên tắc của chúng tôi</h2>
+<ol class="principles">
+<li><strong>Làm trên máy trước</strong>Việc gì làm được trên điện thoại thì không gửi đi đâu.</li>
+<li><strong>Hỏi đúng lúc</strong>Mỗi quyền gắn với một tính năng. Tính năng nào bạn không dùng thì không cần cấp quyền đó.</li>
+<li><strong>Gửi ít nhất có thể</strong>Khi buộc phải dùng mạng (tìm đường, tải bản đồ), chỉ gửi phần dịch vụ đó cần.</li>
+<li><strong>Bạn giữ nút tắt</strong>Tắt tính năng, thu hồi quyền, xoá dữ liệu: đều làm được ngay trên máy.</li>
+</ol>
+</section>
+
+<section id="quyen" class="sec">
+<h2>Mỗi quyền dùng để làm gì</h2>
+<p>Android hỏi bạn trước khi cấp các quyền dưới đây. Dòng “Nếu không cho phép” cho biết bạn mất gì khi từ chối, để bạn tự cân nhắc.</p>
+<div class="cards">
+
+<div class="card">
+<div class="card-h"><h3>Truy cập thông báo</h3><span class="tag">Cuộc gọi · Tin nhắn · Chỉ đường</span></div>
+<dl>
+<dt>Dùng để</dt><dd>Nhận ra cuộc gọi và tin nhắn của Zalo, Messenger, LINE, WhatsApp, Telegram, Viber, Instagram, Tin nhắn (SMS), cuộc gọi SIM (nếu bạn bật), và chỉ dẫn rẽ của Google Maps hoặc Petal Maps. Bấm hộ Nghe, Từ chối, Tắt máy hay Trả lời khi chính bạn bấm trên đồng hồ. Thông báo của các app khác bị bỏ qua.</dd>
+<dt>Nếu không cho phép</dt><dd>Uni Call không biết có cuộc gọi hay tin nhắn, nên đồng hồ không nhận được gì từ Uni Call.</dd>
+</dl>
+<p class="note">Tin nhắn SMS chỉ được đọc từ thông báo; Uni Call không có quyền đọc hộp thư SMS. Nội dung tin nhắn không được lưu.</p>
+</div>
+
+<div class="card">
+<div class="card-h"><h3>Danh bạ (đọc và ghi)</h3><span class="tag">Tên người gọi</span></div>
+<dl>
+<dt>Dùng để</dt><dd>Hiện đúng tên người gọi như trong danh bạ của bạn. Với người gọi chưa có trong danh bạ, app tạo một liên hệ tạm “Zalo &lt;tên&gt;” (hoặc “Mess &lt;tên&gt;”…) mang một số bí danh 8 chữ số không gọi được, đặt trong tài khoản danh bạ riêng “Uni Call” không đồng bộ lên mạng, để màn hình gọi của đồng hồ hiện được tên.</dd>
+<dt>Nếu không cho phép</dt><dd>Đồng hồ có thể hiện “Không xác định” hoặc chỉ hiện tên app thay vì tên người gọi.</dd>
+</dl>
+<p class="note">Uni Call không sửa, không xoá liên hệ của bạn và không gửi danh bạ đi đâu. Cách xoá liên hệ tạm: xem <a href="#xoa">Giữ và xoá dữ liệu</a>.</p>
+</div>
+
+<div class="card">
+<div class="card-h"><h3>Điện thoại và cuộc gọi</h3><span class="tag">Cuộc gọi</span></div>
+<dl>
+<dt>Dùng để</dt><dd><ul>
+<li>Biết máy đang có cuộc gọi SIM hay cuộc gọi của app khác, để không báo trùng.</li>
+<li>Dựng một cuộc gọi tạm ngay trong máy để đồng hồ reo bằng màn hình gọi của nó và bạn nghe bằng mic, loa đồng hồ. Cuộc gọi này không qua nhà mạng, không tốn cước, không gọi ra ngoài.</li>
+<li>Với một số đồng hồ: dùng “tài khoản gọi Uni Call” do chính bạn bật trong cài đặt Android, để app của đồng hồ đọc được tên người gọi.</li>
+</ul></dd>
+<dt>Nếu không cho phép</dt><dd>Cuộc gọi vẫn có thể báo bằng thẻ thông báo hoặc app Uni Call trên đồng hồ, nhưng không reo như cuộc gọi điện thoại.</dd>
+</dl>
+<p class="note">Uni Call không nghe, không ghi âm và không chuyển nội dung của bất kỳ cuộc gọi nào.</p>
+</div>
+
+<div class="card">
+<div class="card-h"><h3>Liên kết đồng hồ</h3><span class="tag">Tên người gọi · Android 12+</span></div>
+<dl>
+<dt>Dùng để</dt><dd>Tính năng chính thức của Android cho app đồng hành với đồng hồ xem các cuộc gọi đang diễn ra. Uni Call chỉ đọc mã của cuộc gọi Messenger, LINE, WhatsApp, Telegram, Viber để tạo liên hệ tạm, nhờ đó đồng hồ hiện tên thay vì một dãy số.</dd>
+<dt>Nếu không cho phép</dt><dd>Ở các cuộc gọi đó, đồng hồ có thể hiện dãy số thay cho tên.</dd>
+</dl>
+<p class="note">Không nghe, không từ chối, không đổi âm thanh của cuộc gọi nào.</p>
+</div>
+
+<div class="card">
+<div class="card-h"><h3>Thiết bị ở gần (Bluetooth)</h3><span class="tag">Kết nối đồng hồ</span></div>
+<dl>
+<dt>Dùng để</dt><dd>Xem danh sách đồng hồ đã ghép đôi và biết đồng hồ có đang nối gọi Bluetooth không.</dd>
+<dt>Nếu không cho phép</dt><dd>App không chọn được đồng hồ để liên kết và không báo được khi đồng hồ mất kết nối gọi.</dd>
+</dl>
+<p class="note">Uni Call không dò tìm và không ghép đôi thiết bị mới.</p>
+</div>
+
+<div class="card">
+<div class="card-h"><h3>Hiển thị trên ứng dụng khác</h3><span class="tag">Cuộc gọi</span></div>
+<dl>
+<dt>Dùng để</dt><dd>Khi bạn bấm Nghe trên đồng hồ, mở màn hình nghe máy của Zalo từ nền (Android 14 trở lên đòi quyền này).</dd>
+<dt>Nếu không cho phép</dt><dd>Bạn có thể phải tự mở Zalo trên điện thoại để nghe máy.</dd>
+</dl>
+<p class="note">Uni Call không dùng quyền này để đọc hay ghi lại màn hình, và không dùng Trợ năng.</p>
+</div>
+
+<div class="card">
+<div class="card-h"><h3>Vị trí (chính xác, gần đúng)</h3><span class="tag">Bản đồ · Chỉ đường</span></div>
+<dl>
+<dt>Dùng để</dt><dd>Vẽ bản đồ, tìm đường, đọc chỉ dẫn rẽ và đưa bản đồ lên đồng hồ khi bạn dùng tính năng Đi đến hoặc đang dẫn đường bằng Google Maps.</dd>
+<dt>Nếu không cho phép</dt><dd>Bản đồ và chỉ đường không theo được vị trí của bạn; cuộc gọi và tin nhắn vẫn chạy bình thường. Đồng hồ có GPS và app Uni Call có thể dùng GPS của chính đồng hồ thay cho điện thoại.</dd>
+</dl>
+<p class="note">Toạ độ chỉ nằm trong bộ nhớ tạm, không ghi xuống máy, không ghi vào nhật ký. App chỉ lấy vị trí trong lúc bạn mở bản đồ hoặc đang dẫn đường.</p>
+</div>
+
+<div class="card">
+<div class="card-h"><h3>Vị trí khi khoá máy (“Luôn cho phép”)</h3><span class="tag opt">Tuỳ chọn · chỉ bản web</span></div>
+<dl>
+<dt>Dùng để</dt><dd>Chỉ để tiếp tục gửi vị trí của điện thoại tới bản đồ và chỉ dẫn rẽ trên đồng hồ khi màn hình điện thoại khoá trong lúc bạn đang dẫn đường. Hết chuyến đi là app ngừng lấy vị trí.</dd>
+<dt>Nếu không cho phép</dt><dd>Mọi thứ vẫn chạy khi màn hình điện thoại sáng; khi khoá máy, bản đồ trên đồng hồ dừng theo vị trí điện thoại (đồng hồ có GPS vẫn tự theo được).</dd>
+</dl>
+<p class="note">Không dùng để theo dõi bạn ngoài lúc dẫn đường. Vị trí không được lưu và không gửi lên máy chủ nào của chúng tôi. Bản Google Play không có quyền này: khi khoá máy, chọn nguồn vị trí “Đồng hồ” nếu đồng hồ có GPS.</p>
+</div>
+
+<div class="card">
+<div class="card-h"><h3>Micro</h3><span class="tag">Nói để trả lời · chỉ bản web</span></div>
+<p class="note">Bản Google Play không có tính năng này và không xin quyền Micro.</p>
+<dl>
+<dt>Dùng để</dt><dd>Chỉ trong lúc bạn nói để trả lời một tin nhắn qua cuộc gọi lên đồng hồ: tin nhắn hiện trên bảng điều khiển nhạc của đồng hồ, bạn bấm Phát, đồng hồ reo, bạn nghe máy và nói. Tiếng nói đi qua kênh gọi Bluetooth, nằm trong bộ nhớ tạm, được đưa cho bộ nhận dạng giọng nói có sẵn của điện thoại (thường là Google, có thể xử lý qua mạng) để thành chữ. Chữ được đọc lại cho bạn nghe, rồi gửi làm câu trả lời qua chính app nhắn tin.</dd>
+<dt>Nếu không cho phép</dt><dd>Chỉ mất tính năng nói để trả lời; trả lời bằng câu soạn sẵn vẫn dùng được. Bạn cũng có thể tắt “Nói để trả lời tin nhắn” trong Cài đặt.</dd>
+</dl>
+<p class="note">Âm thanh không được ghi lại, không lưu và không bao giờ gửi cho chúng tôi. Dịch vụ nền của Uni Call được khai báo có dùng micro chỉ để việc nhận dạng chạy được khi điện thoại đang khoá.</p>
+</div>
+
+<div class="card">
+<div class="card-h"><h3>Thông báo, chạy nền, pin</h3><span class="tag">Luôn sẵn sàng</span></div>
+<dl>
+<dt>Dùng để</dt><dd>Hiện thông báo của Uni Call (thẻ cuộc gọi cho đồng hồ không có app Uni Call, mã ghép đôi Amazfit); chạy dịch vụ nền và tự khởi động cùng máy để không lỡ cuộc gọi; xin bỏ tối ưu pin; rung; biết điện thoại có mạng hay không.</dd>
+<dt>Nếu không cho phép</dt><dd>Android có thể dừng Uni Call khi chạy nền và đồng hồ có thể lỡ cuộc gọi.</dd>
+</dl>
+</div>
+
+<div class="card">
+<div class="card-h"><h3>Nhìn thấy một số app khác</h3><span class="tag">Tương thích</span></div>
+<dl>
+<dt>Dùng để</dt><dd>Uni Call chỉ khai báo đúng những app nó làm việc cùng (các app gọi và nhắn tin, Google Maps, Petal Maps, Mi Fitness, Zepp, Galaxy Wearable, Garmin Connect, Huawei Health…) để lấy biểu tượng, mở app đó khi bạn bấm, và tránh chạy trùng với app cầu nối cuộc gọi khác.</dd>
+<dt>Không làm</dt><dd>Không xin quyền xem toàn bộ danh sách ứng dụng trên máy.</dd>
+</dl>
+</div>
+
+<div class="card">
+<div class="card-h"><h3>Cài app Uni Call lên đồng hồ Xiaomi</h3><span class="tag opt">Tuỳ chọn</span></div>
+<dl>
+<dt>Dùng để</dt><dd>File app đồng hồ đóng sẵn trong file cài đặt Uni Call, không tải từ máy chủ. Bạn có thể lưu file đó ra bộ nhớ máy (bạn chọn nơi lưu) rồi tự cài bằng Mi Fitness hoặc AstroBox.</dd>
+<dt>Cài thẳng (chỉ bản web)</dt><dd>Bạn tự chọn file nhật ký mà Mi Fitness lưu trên máy. Uni Call tìm trong file đó khoá ghép đôi của đồng hồ, dùng khoá này để nối Bluetooth với đồng hồ và gửi app lên.</dd>
+<dt>Không làm</dt><dd>Không lưu file nhật ký hay khoá ghép đôi (chỉ nằm trong bộ nhớ tạm lúc cài) và không gửi đi đâu.</dd>
+</dl>
+</div>
+
+</div>
+</section>
+
+<section id="tren-may" class="sec">
+<h2>Dữ liệu được lưu trên điện thoại</h2>
+<p>Những gì Uni Call lưu nằm trong vùng dữ liệu riêng của app; Android không cho app khác đọc vùng này.</p>
+<div class="cols">
+<div>
+<h3>Có lưu</h3>
+<ul class="yes">
+<li>Cài đặt của bạn: tính năng bật / tắt, mẫu đồng hồ, câu trả lời nhanh bạn soạn, địa điểm Nhà / Cơ quan nếu bạn lưu.</li>
+<li>Danh sách liên hệ tạm Uni Call đã tạo (tên hiển thị, số bí danh, mã liên hệ), chỉ để sau này xoá đúng các liên hệ đó.</li>
+<li>Ghi nhận kỹ thuật không có tên hay nội dung: vị trí nút Nghe / Từ chối trên thông báo của từng app, kênh thông báo cuộc gọi đã nhận ra, vài mốc thời gian.</li>
+<li>Bộ đệm ô bản đồ (giữ tối đa khoảng 14 ngày) và danh sách ô đã gửi lên đồng hồ, để khỏi tải lại. Chúng cho biết những khu vực bạn đã mở bản đồ.</li>
+<li>Mã ghép đôi với app Uni Call trên đồng hồ Amazfit.</li>
+<li>File báo lỗi, chỉ khi bạn bấm “Gửi báo lỗi”: được tạo trong bộ nhớ đệm riêng của app để bạn gửi đi.</li>
+</ul>
+</div>
+<div>
+<h3>Không lưu</h3>
+<ul class="no">
+<li>Nội dung tin nhắn.</li>
+<li>Lịch sử cuộc gọi: danh sách cuộc gọi gần đây chỉ nằm trong bộ nhớ tạm (tối đa 20 cuộc trong 24 giờ), tắt app là mất.</li>
+<li>Toạ độ vị trí, điểm đến, đường đi.</li>
+<li>Âm thanh: tiếng nói khi trả lời chỉ nằm trong bộ nhớ tạm để nhận dạng, rồi bỏ đi.</li>
+</ul>
+</div>
+</div>
+<div class="callout"><p>Uni Call tắt sao lưu của Android: dữ liệu của app không được đưa lên Google Drive và không chuyển sang máy mới.</p></div>
+<p><strong>Trên đồng hồ:</strong> app Uni Call trên đồng hồ lưu ảnh và ô bản đồ để hiện bản đồ. App của hãng đồng hồ (Mi Fitness, Zepp, Galaxy Wearable, Garmin Connect, Huawei Health…) có thể giữ lịch sử thông báo theo chính sách của hãng đó.</p>
+</section>
+
+<section id="roi-may" class="sec">
+<h2>Dữ liệu rời khỏi điện thoại</h2>
+<p>Dữ liệu chỉ rời máy trong các trường hợp dưới đây, và đi thẳng tới đúng nơi được nêu. Không bản sao nào đi qua chúng tôi.</p>
+<div class="flows">
+<div class="flow"><div>
+<h3>Khi bạn tìm địa điểm</h3>
+<dl><dt>Gửi đi</dt><dd>Chữ bạn gõ, kèm vị trí hiện tại của điện thoại để ưu tiên kết quả gần bạn.</dd>
+<dt>Tới</dt><dd>Bộ tìm địa chỉ có sẵn của Android (thường do Google cung cấp); Photon của komoot; Nominatim của OpenStreetMap Foundation khi Photon không trả lời.</dd></dl>
+</div></div>
+<div class="flow"><div>
+<h3>Khi bạn chia sẻ địa điểm từ Google Maps sang Uni Call</h3>
+<dl><dt>Gửi đi</dt><dd>Liên kết rút gọn của Google Maps được mở qua mạng để đọc toạ độ bên trong.</dd>
+<dt>Tới</dt><dd>Máy chủ của Google.</dd></dl>
+</div></div>
+<div class="flow"><div>
+<h3>Khi app tìm đường</h3>
+<dl><dt>Gửi đi</dt><dd>Toạ độ điểm đi, các điểm dừng và điểm đến. Nếu bạn đi lệch đường, app tìm lại từ vị trí mới.</dd>
+<dt>Tới</dt><dd>BRouter (brouter.de); dịch vụ OSRM của FOSSGIS (routing.openstreetmap.de) khi BRouter không trả lời.</dd></dl>
+</div></div>
+<div class="flow"><div>
+<h3>Khi tải bản đồ</h3>
+<dl><dt>Gửi đi</dt><dd>Số hiệu ô bản đồ, tức là khu vực bạn đang xem hoặc đang đi qua.</dd>
+<dt>Tới</dt><dd>GitHub (nơi lưu file bản đồ Việt Nam của Uni Call); OpenFreeMap (tiles.openfreemap.org); máy chủ ô bản đồ của OpenStreetMap (tile.openstreetmap.org) khi hai nguồn kia không dùng được.</dd></dl>
+</div></div>
+<div class="flow"><div>
+<h3>Khi bạn mở Google Maps để dẫn đường</h3>
+<dl><dt>Gửi đi</dt><dd>Điểm đến và các điểm dừng.</dd>
+<dt>Tới</dt><dd>App Google Maps trên máy của bạn; từ đó Google xử lý theo chính sách của Google.</dd></dl>
+</div></div>
+<div class="flow"><div>
+<h3>Khi đưa lên đồng hồ</h3>
+<dl><dt>Gửi đi</dt><dd>Tên người gọi, nội dung tin nhắn, chỉ dẫn rẽ, ảnh và ô bản đồ, vị trí trong lúc chỉ đường.</dd>
+<dt>Tới</dt><dd>Đồng hồ của bạn, qua Bluetooth và app của hãng đồng hồ trên điện thoại (Mi Fitness, Zepp, Galaxy Wearable / Wear OS, Garmin Connect, Huawei Health…). Với Amazfit, app Zepp lấy dữ liệu từ Uni Call qua một cổng chỉ mở bên trong điện thoại (127.0.0.1); máy khác trong mạng không thấy cổng này.</dd></dl>
+</div></div>
+<div class="flow"><div>
+<h3>Khi bạn gửi báo lỗi</h3>
+<dl><dt>Gửi đi</dt><dd>Nội dung nêu ở mục <a href="#bao-loi">Báo lỗi</a>.</dd>
+<dt>Tới</dt><dd>App email của bạn, điền sẵn địa chỉ buiduongquoc71@gmail.com, hoặc nơi khác bạn chọn trong bảng chia sẻ. Bạn xem trước và tự bấm gửi.</dd></dl>
+</div></div>
+<div class="flow"><div>
+<h3>Khi bạn nói để trả lời và khi app đọc lại</h3>
+<dl><dt>Nhận dạng giọng nói</dt><dd>Đoạn tiếng nói của bạn được đưa cho dịch vụ nhận dạng giọng nói của điện thoại (thường là Google); tuỳ máy, việc này chạy trên máy hoặc qua mạng. Chữ nhận được gửi làm câu trả lời qua app nhắn tin (Zalo, Messenger…).</dd>
+<dt>Đọc thành tiếng</dt><dd>Câu trả lời và chỉ dẫn rẽ được đọc bằng bộ đọc văn bản (TTS) có sẵn của điện thoại, do bạn chọn trong cài đặt Android.</dd></dl>
+</div></div>
+</div>
+<div class="callout">
+<p>Như mọi kết nối Internet, máy chủ nhận được địa chỉ IP của bạn và tên, phiên bản app (ví dụ “Uni Call/1.0.1”). Các yêu cầu không kèm tên, số điện thoại, danh bạ, tin nhắn hay mã định danh thiết bị, và đi qua kết nối mã hoá HTTPS.</p>
+<p>Mỗi dịch vụ xử lý dữ liệu theo chính sách riêng của họ, xem <a href="#ben-thu-ba">Dịch vụ bên thứ ba</a>.</p>
+</div>
+</section>
+
+<section id="bao-loi" class="sec">
+<h2>Báo lỗi</h2>
+<ul>
+<li>Báo lỗi chỉ được tạo khi bạn bấm <strong>Gửi báo lỗi</strong> (Cài đặt › Hỗ trợ). App dựng một file chữ trong bộ nhớ đệm riêng của app, rồi mở bảng chia sẻ hoặc app email đã điền sẵn địa chỉ buiduongquoc71@gmail.com. Bạn xem trước, có thể đổi nơi nhận, và tự bấm gửi.</li>
+<li><strong>Có:</strong> hãng và đời điện thoại, phiên bản Android và Uni Call, cài đặt của Uni Call, mẫu đồng hồ, trạng thái quyền của Uni Call và của các app liên quan (Zalo, Messenger, app đồng hồ), các cuộc gọi gần đây chỉ gồm tên app, giờ, kết quả và thời lượng, nhật ký kỹ thuật của app và của kênh đồng hồ.</li>
+<li><strong>Không có:</strong> tên người gọi, số điện thoại, nội dung tin nhắn, toạ độ. Ở bản phát hành, giá trị cá nhân trong nhật ký kỹ thuật được thay bằng “(ẩn)”.</li>
+<li>Nếu bạn chọn gửi tới nơi khác trong bảng chia sẻ (ví dụ một nhóm chat), những người ở nơi đó có thể xem.</li>
+<li>File trong bộ nhớ đệm bị xoá khi bạn xoá bộ nhớ đệm của app hoặc gỡ app. Bản bạn đã gửi đi nằm ở nơi nhận (ví dụ hộp thư đã gửi của bạn).</li>
+<li>Chúng tôi chỉ dùng báo lỗi nhận được để tìm và sửa lỗi, và xoá khi không còn cần. Bạn có thể yêu cầu xoá bất cứ lúc nào.</li>
+</ul>
+</section>
+
+<section id="khong-lam" class="sec">
+<h2>Những điều Uni Call không làm</h2>
+<ul class="no">
+<li>Không tạo tài khoản, không bắt đăng nhập.</li>
+<li>Không hiện quảng cáo và không có mua hàng trong app.</li>
+<li>Không cài công cụ phân tích, đo lường, theo dõi hay tự gửi báo cáo sự cố.</li>
+<li>Không bán, cho thuê hay trao đổi dữ liệu của bạn với bất kỳ ai.</li>
+<li>Không nghe, không ghi âm cuộc gọi; micro chỉ dùng lúc bạn nói để trả lời.</li>
+<li>Không dùng Trợ năng để đọc màn hình.</li>
+<li>Không gửi danh bạ, tin nhắn hay lịch sử cuộc gọi lên mạng.</li>
+<li>Không lấy vị trí khi bạn không dùng bản đồ hay chỉ đường.</li>
+</ul>
+</section>
+
+<section id="xoa" class="sec">
+<h2>Giữ và xoá dữ liệu</h2>
+<ul>
+<li><strong>Tắt từng tính năng</strong> trong phần Cài đặt của Uni Call.</li>
+<li><strong>Thu hồi quyền:</strong> Cài đặt Android › Ứng dụng › Uni Call › Quyền.</li>
+<li><strong>Liên hệ tạm:</strong> mặc định bị xoá khi hết cuộc gọi, hoặc lúc app chạy lại nếu app bị tắt giữa chừng. Nếu bạn bật “Giữ liên hệ tên người gọi”, liên hệ không dùng quá 30 ngày tự xoá và giữ tối đa 40 liên hệ. Xoá ngay: Uni Call › Cài đặt › Quyền riêng tư &amp; dữ liệu › “Xoá … liên hệ tạm” (tắt công tắc giữ liên hệ cũng xoá hết).</li>
+<li><strong>Xoá dữ liệu app:</strong> Cài đặt Android › Ứng dụng › Uni Call › Bộ nhớ › Xoá dữ liệu.</li>
+<li><strong>Gỡ app:</strong> xoá toàn bộ dữ liệu của app, kể cả tài khoản danh bạ Uni Call và các liên hệ tạm trong đó. Nếu máy không cho tạo tài khoản riêng, liên hệ tạm nằm trong danh bạ trên máy: hãy bấm “Xoá liên hệ tạm” trước khi gỡ.</li>
+<li><strong>File báo lỗi</strong> nằm trong bộ nhớ đệm của app: xoá bằng Cài đặt Android › Ứng dụng › Uni Call › Bộ nhớ › Xoá bộ nhớ đệm, hoặc tự mất khi gỡ app.</li>
+<li><strong>Trên đồng hồ:</strong> gỡ app Uni Call trên đồng hồ để xoá ảnh và ô bản đồ đã lưu.</li>
+</ul>
+<p class="muted">Chúng tôi không giữ dữ liệu của bạn trên máy chủ, nên không có tài khoản nào cần xoá. Riêng báo lỗi bạn đã gửi cho chúng tôi: nhắn qua mục <a href="#lien-he">Liên hệ</a> để được xoá.</p>
+</section>
+
+<section id="tre-em" class="sec">
+<h2>Trẻ em</h2>
+<p>Uni Call không hướng tới trẻ em dưới 13 tuổi và không cố ý thu thập dữ liệu của trẻ em. Nếu bạn là cha mẹ và cho rằng con mình đã gửi báo lỗi cho chúng tôi, hãy liên hệ để chúng tôi xoá.</p>
+</section>
+
+<section id="bao-mat" class="sec">
+<h2>Bảo mật</h2>
+<ul>
+<li>Dữ liệu nằm trong vùng riêng của app; Android không cho app khác đọc. Sao lưu của Android bị tắt: dữ liệu không lên Google Drive và không chuyển sang máy mới.</li>
+<li>Mọi kết nối mạng dùng HTTPS; app không cho phép kết nối không mã hoá.</li>
+<li>Không có máy chủ, tài khoản hay mật khẩu của Uni Call, nên không có kho dữ liệu người dùng nào để bị lộ.</li>
+<li>Nhật ký kỹ thuật ở bản phát hành thay tên người gọi, số điện thoại và nội dung bằng “(ẩn)”, kể cả trong file báo lỗi.</li>
+<li>Các phần app mở cho hệ thống gọi vào (đọc thông báo, dịch vụ gọi điện, theo dõi cuộc gọi, tài khoản danh bạ) đều được Android bảo vệ bằng quyền của hệ thống; app khác không gọi thẳng được.</li>
+<li>Khoá ghép đôi đồng hồ (chỉ bản web, khi cài thẳng) chỉ nằm trong bộ nhớ tạm lúc cài và không được ghi ra đâu.</li>
+<li>Cổng dành cho app Zepp chỉ mở bên trong điện thoại (127.0.0.1), phải ghép đôi bằng mã hiện trên điện thoại và dùng mã truy cập riêng.</li>
+<li>Tài khoản danh bạ Uni Call không có mật khẩu và không đồng bộ lên mạng.</li>
+<li>App tự kiểm tra chữ ký của chính nó: bản bị sửa rồi ký lại sẽ không chạy, để bảo vệ cuộc gọi, tin nhắn và danh bạ của bạn. Hãy cài Uni Call từ Google Play hoặc trang phát hành chính thức; các bản chia sẻ ở nơi khác không được hỗ trợ.</li>
+<li>Không hệ thống nào an toàn tuyệt đối. Nếu phát hiện lỗ hổng, xin báo riêng cho chúng tôi qua Gmail và chưa công bố cho tới khi bản sửa được phát hành; chúng tôi sẽ trả lời và sửa sớm nhất có thể.</li>
+<li>Nếu có sự cố làm lộ dữ liệu của người dùng, chúng tôi sẽ báo trong app và trên trang này, kèm việc bạn nên làm.</li>
+</ul>
+</section>
+
+<section id="ben-thu-ba" class="sec">
+<h2>Dịch vụ bên thứ ba</h2>
+<p>Các dịch vụ dưới đây chỉ nhận đúng phần đã nêu ở mục <a href="#roi-may">Dữ liệu rời khỏi điện thoại</a>, và xử lý theo chính sách của họ:</p>
+<ul>
+<li>Photon (komoot): <a href="https://photon.komoot.io/">photon.komoot.io</a> · <a href="https://www.komoot.com/privacy">chính sách quyền riêng tư của komoot</a></li>
+<li>Nominatim và máy chủ ô bản đồ OpenStreetMap: <a href="https://osmfoundation.org/wiki/Privacy_Policy">chính sách quyền riêng tư của OpenStreetMap Foundation</a></li>
+<li>BRouter: <a href="https://brouter.de/">brouter.de</a></li>
+<li>OSRM do FOSSGIS vận hành: <a href="https://routing.openstreetmap.de/">routing.openstreetmap.de</a></li>
+<li>OpenFreeMap: <a href="https://openfreemap.org/">openfreemap.org</a></li>
+<li>GitHub (lưu file bản đồ Việt Nam và trang này): <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">GitHub General Privacy Statement</a></li>
+<li>Google (bộ tìm địa chỉ của Android, liên kết Google Maps, nhận dạng giọng nói, Gmail): <a href="https://policies.google.com/privacy">policies.google.com/privacy</a></li>
+<li>App của hãng đồng hồ: Mi Fitness (<a href="https://privacy.mi.com/">privacy.mi.com</a>), Zepp, Galaxy Wearable, Wear OS, Garmin Connect, Huawei Health — theo chính sách của từng hãng.</li>
+</ul>
+<p>Uni Call có đóng kèm hai bộ thư viện của hãng đồng hồ. Cả hai chỉ nói chuyện với app của hãng đó ngay trên điện thoại, không tự gửi gì lên mạng từ Uni Call:</p>
+<ul>
+<li>Thư viện kết nối đồng hồ của Xiaomi: chuyển tin giữa Uni Call và app Uni Call trên đồng hồ, qua Mi Fitness.</li>
+<li>Huawei Wear Engine: dành cho app Uni Call trên đồng hồ Huawei, đi qua Huawei Health. Ở bản 1.0.1, phần này chưa được bật.</li>
+</ul>
+</section>
+
+<section id="quyen-cua-ban" class="sec">
+<h2>Quyền của bạn</h2>
+<p>Theo pháp luật Việt Nam về bảo vệ dữ liệu cá nhân và quy định tương tự nơi bạn sống, bạn có quyền được biết, đồng ý hoặc rút lại đồng ý, truy cập, chỉnh sửa, xoá, hạn chế xử lý dữ liệu và khiếu nại. Với Uni Call, phần lớn các quyền này bạn thực hiện được ngay trên máy:</p>
+<ul>
+<li><strong>Được biết:</strong> chính trang này và mục “Trước khi dùng Uni Call” trong app.</li>
+<li><strong>Đồng ý hoặc rút lại:</strong> cấp hay thu hồi quyền trong Android, tắt tính năng, hoặc gỡ app.</li>
+<li><strong>Xoá:</strong> xem <a href="#xoa">Giữ và xoá dữ liệu</a>.</li>
+<li><strong>Hỏi, yêu cầu, khiếu nại:</strong> liên hệ chúng tôi; bạn cũng có quyền khiếu nại tới cơ quan nhà nước có thẩm quyền.</li>
+</ul>
+</section>
+
+<section id="thay-doi" class="sec">
+<h2>Khi chính sách thay đổi</h2>
+<ul>
+<li>Bản mới được đăng tại đúng địa chỉ này, kèm ngày hiệu lực mới và tóm tắt thay đổi bên dưới.</li>
+<li>Thay đổi quan trọng (ví dụ có thêm loại dữ liệu rời khỏi máy) sẽ được báo trong app, và app hỏi lại sự đồng ý của bạn.</li>
+</ul>
+<ul class="history">
+<li><strong>28/10/2026</strong> — Nêu rõ bản Google Play và bản web khác nhau ở đâu; thêm cách lưu file app đồng hồ; nói rõ việc đọc khoá ghép đôi khi cài thẳng; thêm hai thư viện của hãng đồng hồ; bỏ kênh Telegram.</li>
+<li><strong>14/10/2026</strong> — Bản đầu tiên, áp dụng cho Uni Call 1.0.1.</li>
+</ul>
+</section>
+
+<section id="lien-he" class="sec">
+<h2>Liên hệ</h2>
+<p>Câu hỏi về quyền riêng tư, yêu cầu xoá báo lỗi hay báo lỗ hổng bảo mật, xin gửi cho chúng tôi:</p>
+<div class="contact">
+<a class="c" href="mailto:buiduongquoc71@gmail.com"><span class="k">Gmail</span><span class="v">buiduongquoc71@gmail.com</span></a>
+</div>
+<p class="muted small">Trong app: Cài đặt › Hỗ trợ › Mail. Nếu bản tiếng Việt và bản tiếng Anh khác nhau, bản tiếng Việt được ưu tiên. Xem thêm <a href="../../terms/vi/index.html">Sở hữu trí tuệ &amp; điều khoản</a>.</p>
+</section>
+
+</main></div>
+<footer class="foot"><div class="wrap foot-in">
+<div><p>© 2026 Bùi Dương Quốc · Uni Call. Mọi quyền được bảo lưu, trừ phần thuộc bên thứ ba.</p><p>Trang tĩnh: không cookie, không mã theo dõi, không tải tài nguyên từ nơi khác. Trang được lưu trên GitHub Pages; GitHub có thể ghi nhật ký truy cập theo chính sách của GitHub.</p></div>
+<div class="foot-links"><a href="../../index.html">Trang tài liệu</a><a href="#top">Lên đầu trang</a></div>
+</div></footer>
+</body>
+</html>

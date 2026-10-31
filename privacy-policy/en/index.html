@@ -1,0 +1,552 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy – Uni Call</title>
+<meta name="description" content="Which permissions Uni Call uses and why, what stays on your phone and what leaves it.">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#1f6fe0" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0a111d" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 108 108"%3E %3Cdefs%3E%3ClinearGradient id="gf" x1="18" y1="10" x2="90" y2="100" gradientUnits="userSpaceOnUse"%3E %3Cstop offset="0" stop-color="#2B7DF0"/%3E%3Cstop offset="1" stop-color="#0FA3B1"/%3E%3C/linearGradient%3E%3C/defs%3E %3Crect width="108" height="108" rx="26" fill="url%28#gf%29"/%3E %3Cpath fill="#fff" fill-opacity=".9" d="M45 37l1.5-11.5Q47 23 49.5 23h9q2.5 0 3 2.5L63 37zM45 71l1.5 11.5Q47 85 49.5 85h9q2.5 0 3-2.5L63 71z"/%3E %3Cpath fill="#fff" d="M74 50h3a1.5 1.5 0 0 1 1.5 1.5v5A1.5 1.5 0 0 1 77 58h-3z"/%3E %3Ccircle cx="54" cy="54" r="21" fill="#fff"/%3E%3Ccircle cx="54" cy="54" r="17" fill="#0B3D91"/%3E %3Cg transform="translate%2842.6 42.6%29 scale%28.95%29"%3E%3Cpath fill="#fff" d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/%3E%3C/g%3E %3Ccircle cx="68.5" cy="39.5" r="6" fill="#FBBC04" stroke="#1F6FE0" stroke-width="2"/%3E %3C/svg%3E">
+<link rel="alternate" hreflang="vi" href="../vi/index.html"><link rel="alternate" hreflang="en" href="../en/index.html">
+<style>
+:root{
+  --bg:#f4f7fb;--surface:#ffffff;--surface-2:#edf3fa;--text:#0e1a2b;--muted:#4b5b72;--line:#d9e2ee;
+  --brand:#1f6fe0;--brand-2:#0fa3b1;--accent:#f5b400;--link:#1557c4;--bar:rgba(244,247,251,.92);
+  --keep:#0d7466;--keep-bg:#e2f4f0;--out:#1a5fc8;--out-bg:#e6effd;--never:#a93f17;--never-bg:#fbeae3;
+  --hero-a:#2b7df0;--hero-b:#0fa3b1;
+  --shadow:0 1px 2px rgba(14,26,43,.05),0 6px 18px rgba(14,26,43,.06);--radius:16px;color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#0a111d;--surface:#111b2b;--surface-2:#172437;--text:#e5ecf6;--muted:#a3b1c6;--line:#25354d;
+    --brand:#5b9dff;--brand-2:#35c2cd;--accent:#ffcc3d;--link:#86b9ff;--bar:rgba(10,17,29,.92);
+    --keep:#4fd3bb;--keep-bg:#0f2f2b;--out:#8ab7ff;--out-bg:#14263f;--never:#ff9c70;--never-bg:#381c12;
+    --hero-a:#1a4fa3;--hero-b:#0a6a73;--shadow:none;color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0a111d;--surface:#111b2b;--surface-2:#172437;--text:#e5ecf6;--muted:#a3b1c6;--line:#25354d;
+  --brand:#5b9dff;--brand-2:#35c2cd;--accent:#ffcc3d;--link:#86b9ff;--bar:rgba(10,17,29,.92);
+  --keep:#4fd3bb;--keep-bg:#0f2f2b;--out:#8ab7ff;--out-bg:#14263f;--never:#ff9c70;--never-bg:#381c12;
+  --hero-a:#1a4fa3;--hero-b:#0a6a73;--shadow:none;color-scheme:dark;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans","Helvetica Neue",Arial,sans-serif;overflow-wrap:break-word}
+a{color:var(--link);text-underline-offset:2px}
+a:focus-visible,summary:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:6px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 16px}
+.skip{position:absolute;left:-9999px;top:8px;z-index:100;background:var(--surface);color:var(--text);padding:8px 14px;border-radius:8px;border:2px solid var(--brand)}
+.skip:focus{left:16px}
+/* Thanh trên */
+.topbar{position:sticky;top:0;z-index:20;background:var(--bar);-webkit-backdrop-filter:saturate(1.4) blur(10px);backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid var(--line)}
+.topbar-in{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;min-height:58px;padding-top:6px;padding-bottom:6px}
+.brand{display:flex;align-items:center;gap:9px;font-weight:700;font-size:1.05rem;color:var(--text);text-decoration:none;letter-spacing:-.01em}
+.logo{display:block;flex:none;border-radius:22%}
+.docnav{display:flex;flex-wrap:wrap;gap:4px;margin-left:auto}
+.docnav a{padding:6px 12px;border-radius:999px;font-size:.9rem;color:var(--muted);text-decoration:none;white-space:nowrap}
+.docnav a:hover{color:var(--text);background:var(--surface-2)}
+.docnav a[aria-current]{background:var(--surface-2);color:var(--text);font-weight:600}
+.lang{display:flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;flex:none}
+.lang a{padding:4px 11px;font-size:.78rem;font-weight:700;letter-spacing:.06em;color:var(--muted);text-decoration:none}
+.lang a[aria-current]{background:var(--brand);color:#fff}
+@media (max-width:639px){
+  .hide-sm{display:none}
+  .docnav{order:3;width:100%;margin-left:0}
+  .lang{margin-left:auto}
+}
+/* Băng đầu trang */
+.hero{position:relative;overflow:hidden;color:#fff;background:linear-gradient(135deg,var(--hero-a),var(--hero-b));padding:40px 0 46px}
+.hero::before,.hero::after{content:"";position:absolute;border-radius:50%;pointer-events:none}
+.hero::before{right:-90px;top:-110px;width:340px;height:340px;border:30px solid rgba(255,255,255,.09)}
+.hero::after{right:150px;bottom:-70px;width:120px;height:120px;background:rgba(251,188,4,.22)}
+.hero .wrap{position:relative;z-index:1}
+.eyebrow{margin:0;font-size:.8rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;opacity:.9}
+.hero h1{font-size:clamp(1.7rem,5.4vw,2.6rem);line-height:1.18;letter-spacing:-.015em;margin:.25em 0 .35em}
+.lede{max-width:44rem;margin:0;font-size:1.05rem;opacity:.96}
+.chips{list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 0;padding:0}
+.chips li{background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.3);border-radius:999px;padding:3px 12px;font-size:.84rem}
+/* Bố cục */
+.layout{display:grid;grid-template-columns:minmax(0,1fr);gap:24px;padding-top:24px;padding-bottom:40px}
+@media (min-width:960px){.layout{grid-template-columns:232px minmax(0,1fr);gap:36px;padding-top:32px}}
+.toc-side{display:none}
+@media (min-width:960px){
+  .toc-side{display:block;position:sticky;top:78px;align-self:start;max-height:calc(100vh - 96px);overflow:auto;font-size:.9rem}
+  .toc-mob{display:none}
+}
+.toc-title{margin:0 0 8px;font-size:.76rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.toc ol{list-style:none;margin:0;padding:0}
+.toc li a{display:block;padding:5px 10px;border-left:2px solid var(--line);color:var(--muted);text-decoration:none;line-height:1.4}
+.toc li a:hover{color:var(--text);border-left-color:var(--brand)}
+.toc-mob{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:12px 16px}
+.toc-mob summary{cursor:pointer;font-weight:600}
+.toc-mob ol{margin-top:10px}
+main{min-width:0}
+/* Mục */
+.sec{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:22px 18px;margin:0 0 18px;box-shadow:var(--shadow);scroll-margin-top:118px}
+@media (min-width:640px){.sec{padding:28px 32px;scroll-margin-top:82px}}
+.sec h2{display:flex;align-items:center;gap:12px;margin:0 0 12px;font-size:1.28rem;line-height:1.3;letter-spacing:-.01em}
+.sec h2::before{content:"";flex:none;width:10px;height:10px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 3px var(--surface),0 0 0 5px var(--brand)}
+.sec h3{margin:0;font-size:1.04rem;line-height:1.4}
+.sec p,.sec ul,.sec ol{margin:.55em 0}
+.sec ul,.sec ol{padding-left:1.25em}
+.sec li{margin:.3em 0}
+.sec > :last-child{margin-bottom:0}
+.muted{color:var(--muted)}
+.small{font-size:.92rem}
+.mono{font-family:ui-monospace,SFMono-Regular,Consolas,"Liberation Mono",monospace;font-size:.88em;background:var(--surface-2);padding:1px 6px;border-radius:6px;overflow-wrap:anywhere}
+.callout{background:var(--surface-2);border-left:4px solid var(--brand-2);border-radius:10px;padding:12px 16px;margin:14px 0}
+.callout p{margin:.3em 0}
+/* Ba ô tóm tắt */
+.tiles{display:grid;grid-template-columns:minmax(0,1fr);gap:12px;margin-top:16px}
+@media (min-width:700px){.tiles{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.tile{border-radius:14px;padding:16px}
+.tile p{margin:0}
+.tile-k{display:flex;align-items:center;gap:8px;font-weight:700;margin:0 0 6px!important}
+.tile-k svg{flex:none}
+.tile-keep{background:var(--keep-bg)}.tile-keep .tile-k{color:var(--keep)}
+.tile-out{background:var(--out-bg)}.tile-out .tile-k{color:var(--out)}
+.tile-never{background:var(--never-bg)}.tile-never .tile-k{color:var(--never)}
+/* Nguyên tắc */
+.principles{list-style:none;padding:0!important;display:grid;grid-template-columns:minmax(0,1fr);gap:12px;counter-reset:p}
+@media (min-width:700px){.principles{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.principles li{counter-increment:p;position:relative;margin:0;padding:14px 16px 14px 58px;border:1px solid var(--line);border-radius:14px}
+.principles li::before{content:counter(p);position:absolute;left:16px;top:14px;width:30px;height:30px;border-radius:50%;display:grid;place-items:center;font-weight:800;color:#fff;background:linear-gradient(135deg,var(--hero-a),var(--hero-b))}
+.principles strong{display:block}
+/* Thẻ quyền / thẻ giấy phép */
+.cards{display:grid;gap:12px;margin-top:14px}
+.card{border:1px solid var(--line);border-radius:14px;padding:16px}
+.card-h{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:6px 12px;margin-bottom:10px}
+.tag{display:inline-block;font-size:.74rem;font-weight:700;padding:2px 10px;border-radius:999px;background:var(--out-bg);color:var(--out)}
+.tag.off{background:var(--surface-2);color:var(--muted)}
+.tag.opt{background:var(--keep-bg);color:var(--keep)}
+.card dl,.flow dl{margin:0;display:grid;grid-template-columns:minmax(0,1fr);gap:2px 18px}
+@media (min-width:640px){.card dl,.flow dl{grid-template-columns:168px minmax(0,1fr)}}
+.card dt,.flow dt{font-weight:600;font-size:.88rem;color:var(--muted);padding-top:1px}
+.card dd,.flow dd{margin:0 0 8px}
+.card dd:last-child,.flow dd:last-child{margin-bottom:0}
+.card dd ul{margin:.2em 0;padding-left:1.1em}
+.note{margin:10px 0 0!important;padding-top:10px;border-top:1px dashed var(--line);font-size:.92rem;color:var(--muted)}
+/* Luồng dữ liệu */
+.flows{counter-reset:f;margin-top:8px}
+.flow{counter-increment:f;display:grid;grid-template-columns:34px minmax(0,1fr);gap:12px;padding:16px 0;border-top:1px solid var(--line)}
+.flow:first-child{border-top:0;padding-top:6px}
+.flow::before{content:counter(f);width:32px;height:32px;border-radius:50%;display:grid;place-items:center;font-weight:800;background:var(--out-bg);color:var(--out)}
+.flow h3{margin:4px 0 8px}
+/* Danh sách có / không */
+.yes,.no{list-style:none;padding-left:0!important}
+.yes li,.no li{position:relative;padding-left:1.7em}
+.yes li::before,.no li::before{position:absolute;left:0;top:0;font-weight:800}
+.yes li::before{content:"\2713";color:var(--keep)}
+.no li::before{content:"\2715";color:var(--never)}
+.cols{display:grid;grid-template-columns:minmax(0,1fr);gap:4px 28px}
+@media (min-width:700px){.cols{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.cols h3{margin-top:10px}
+/* Liên hệ */
+.contact{display:grid;grid-template-columns:minmax(0,1fr);gap:12px;margin-top:12px}
+@media (min-width:640px){.contact{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.contact a.c{display:block;border:1px solid var(--line);border-radius:14px;padding:14px 16px;text-decoration:none;color:var(--text)}
+.contact a.c:hover{border-color:var(--brand)}
+.contact .k{display:block;font-size:.8rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.contact .v{display:block;font-weight:600;color:var(--link);overflow-wrap:anywhere}
+.history{list-style:none;padding:0!important}
+.history li{padding:8px 0;border-top:1px solid var(--line)}
+.history li:first-child{border-top:0}
+/* Chân trang */
+.foot{border-top:1px solid var(--line);padding:22px 0 36px;font-size:.88rem;color:var(--muted)}
+.foot-in{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px 24px}
+.foot p{margin:.2em 0}
+.foot-links{display:flex;flex-wrap:wrap;gap:6px 16px}
+/* Trang chủ tài liệu */
+.home-hero{text-align:left}
+.home-hero .logo{width:64px;height:64px;margin-bottom:14px;box-shadow:0 6px 24px rgba(0,0,0,.18)}
+.docs{display:grid;grid-template-columns:minmax(0,1fr);gap:16px;padding-top:28px;padding-bottom:20px}
+@media (min-width:760px){.docs{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.doc{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:22px 20px;box-shadow:var(--shadow)}
+.doc h2{margin:0 0 4px;font-size:1.2rem}
+.doc .en{margin:0 0 10px;color:var(--muted);font-size:.95rem}
+.doc p{margin:.4em 0 14px}
+.btns{display:flex;flex-wrap:wrap;gap:8px}
+.btn{display:inline-flex;align-items:center;gap:6px;padding:9px 16px;border-radius:999px;background:var(--brand);color:#fff;text-decoration:none;font-weight:600;font-size:.94rem}
+.btn.ghost{background:transparent;color:var(--link);border:1px solid var(--line)}
+.btn:hover{filter:brightness(1.07)}
+@media print{
+  .topbar,.toc-side,.toc-mob,.skip{display:none!important}
+  .hero{background:none;color:#000;padding:0 0 12px}
+  .hero::before,.hero::after{display:none}
+  .chips li{border-color:#999;background:none}
+  .sec{box-shadow:none;break-inside:avoid-page}
+  .layout{display:block}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="topbar" id="top"><div class="wrap topbar-in">
+<a class="brand" href="../../index.html"><svg class="logo" width="28" height="28" viewBox="0 0 108 108" role="img" aria-label="Uni Call">
+<defs><linearGradient id="gh" x1="18" y1="10" x2="90" y2="100" gradientUnits="userSpaceOnUse">
+<stop offset="0" stop-color="#2B7DF0"/><stop offset="1" stop-color="#0FA3B1"/></linearGradient></defs>
+<rect width="108" height="108" rx="26" fill="url(#gh)"/>
+<path fill="#fff" fill-opacity=".9" d="M45 37l1.5-11.5Q47 23 49.5 23h9q2.5 0 3 2.5L63 37zM45 71l1.5 11.5Q47 85 49.5 85h9q2.5 0 3-2.5L63 71z"/>
+<path fill="#fff" d="M74 50h3a1.5 1.5 0 0 1 1.5 1.5v5A1.5 1.5 0 0 1 77 58h-3z"/>
+<circle cx="54" cy="54" r="21" fill="#fff"/><circle cx="54" cy="54" r="17" fill="#0B3D91"/>
+<g transform="translate(42.6 42.6) scale(.95)"><path fill="#fff" d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></g>
+<circle cx="68.5" cy="39.5" r="6" fill="#FBBC04" stroke="#1F6FE0" stroke-width="2"/>
+</svg><span>Uni Call</span></a>
+<nav class="docnav" aria-label="Documents"><a href="../../privacy-policy/en/index.html" aria-current="page">Privacy</a><a href="../../terms/en/index.html">Intellectual property<span class="hide-sm"> &amp; terms</span></a></nav>
+<nav class="lang" aria-label="Language"><a href="../vi/index.html" hreflang="vi" lang="vi">VI</a><a href="index.html" hreflang="en" lang="en" aria-current="true">EN</a></nav>
+</div></header>
+<div class="hero"><div class="wrap"><p class="eyebrow">Uni Call · phone &amp; watch</p><h1>Privacy Policy</h1><p class="lede">Your calls, messages and directions are handled on your own phone so they can reach your watch. This page explains what Uni Call touches, why, and what never leaves the device.</p><ul class="chips"><li>Effective 28/10/2026</li><li>Covers Uni Call 1.0.1</li><li>Version 2</li></ul></div></div>
+<div class="wrap layout"><aside class="toc toc-side" aria-label="On this page"><p class="toc-title">On this page</p><ol><li><a href="#summary">The one-minute version</a></li><li><a href="#about">What Uni Call is and who makes it</a></li><li><a href="#principles">Our four principles</a></li><li><a href="#permissions">What each permission is for</a></li><li><a href="#on-device">Data stored on your phone</a></li><li><a href="#leaves">Data that leaves your phone</a></li><li><a href="#bug-report">Bug reports</a></li><li><a href="#never">What Uni Call does not do</a></li><li><a href="#retention">Keeping and deleting data</a></li><li><a href="#children">Children</a></li><li><a href="#security">Security</a></li><li><a href="#third-parties">Third-party services</a></li><li><a href="#your-rights">Your rights</a></li><li><a href="#changes">When this policy changes</a></li><li><a href="#contact">Contact</a></li></ol></aside><details class="toc toc-mob"><summary>Contents</summary><ol><li><a href="#summary">The one-minute version</a></li><li><a href="#about">What Uni Call is and who makes it</a></li><li><a href="#principles">Our four principles</a></li><li><a href="#permissions">What each permission is for</a></li><li><a href="#on-device">Data stored on your phone</a></li><li><a href="#leaves">Data that leaves your phone</a></li><li><a href="#bug-report">Bug reports</a></li><li><a href="#never">What Uni Call does not do</a></li><li><a href="#retention">Keeping and deleting data</a></li><li><a href="#children">Children</a></li><li><a href="#security">Security</a></li><li><a href="#third-parties">Third-party services</a></li><li><a href="#your-rights">Your rights</a></li><li><a href="#changes">When this policy changes</a></li><li><a href="#contact">Contact</a></li></ol></details><main id="main">
+<section id="summary" class="sec">
+<h2>The one-minute version</h2>
+<p>Uni Call runs on your own phone. Uni Call has no servers of its own, so there is no place on our side that receives your calls, messages, contacts or location.</p>
+<div class="tiles">
+<div class="tile tile-keep"><p class="tile-k"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="2.5" width="12" height="19" rx="3" fill="none" stroke="currentColor" stroke-width="2"/><path d="M10 18h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Stays on the phone</p><p>Caller names, message text, turn instructions and location are handled in temporary memory to reach your watch, then dropped.</p></div>
+<div class="tile tile-out"><p class="tile-k"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h11M12 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Leaves only when needed</p><p>Search text, start and destination points and map areas go to map services; your voice when replying goes to the phone's speech recogniser; a bug report leaves only when you send it. Details under <a href="#leaves">Data that leaves your phone</a>.</p></div>
+<div class="tile tile-never"><p class="tile-k"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M6 18L18 6" stroke="currentColor" stroke-width="2"/></svg>Never</p><p>No account, no ads, no analytics or tracking tools, no selling of data, no call recording.</p></div>
+</div>
+</section>
+
+<section id="about" class="sec">
+<h2>What Uni Call is and who makes it</h2>
+<ul>
+<li><strong>Uni Call</strong> is an Android app (package <span class="mono">app.unicall.watch</span>) that brings calls, messages and turn-by-turn directions from your phone to your smartwatch.</li>
+<li>It consists of the phone app, a Uni Call watch app for Xiaomi / Redmi watches running Vela (bundled inside the installer), and a Uni Call watch app for Amazfit (Zepp OS). Other watches (Wear OS, Galaxy Watch, Garmin, Huawei…) receive alerts as notification cards or on the watch's own call screen.</li>
+<li>Uni Call is made by <span class="dev">Bùi Dương Quốc</span>, an individual developer based in Vietnam (“we” on this page). Uni Call comes in two editions built from the same source: the <strong>Google Play edition</strong> and the <strong>web edition</strong>. They are identical except for two points, marked in the sections below: only the web edition asks for “Allow all the time” location and offers direct install of the Xiaomi watch app. It is an independent project, not owned by or affiliated with Zalo (VNG), Meta, LINE, Google, Samsung, Xiaomi, Huawei, Zepp Health or Garmin.</li>
+<li>This policy covers the apps above and this website.</li>
+</ul>
+</section>
+
+<section id="principles" class="sec">
+<h2>Our four principles</h2>
+<ol class="principles">
+<li><strong>On the device first</strong>If something can be done on the phone, it is not sent anywhere.</li>
+<li><strong>Ask at the right time</strong>Each permission belongs to a feature. If you do not use a feature, you do not need to grant its permission.</li>
+<li><strong>Send as little as possible</strong>When the network is unavoidable (routing, map download), only what that service needs is sent.</li>
+<li><strong>You hold the off switch</strong>Turning features off, revoking permissions and deleting data can all be done on the phone.</li>
+</ol>
+</section>
+
+<section id="permissions" class="sec">
+<h2>What each permission is for</h2>
+<p>Android asks you before granting any of these. The “If you say no” line tells you what you lose, so you can decide for yourself.</p>
+<div class="cards">
+
+<div class="card">
+<div class="card-h"><h3>Notification access</h3><span class="tag">Calls · Messages · Directions</span></div>
+<dl>
+<dt>Used to</dt><dd>Recognise calls and messages from Zalo, Messenger, LINE, WhatsApp, Telegram, Viber, Instagram, Messages (SMS), SIM calls (if you turn this on), and turn instructions from Google Maps or Petal Maps. Press Answer, Decline, Hang up or Reply on your behalf when you press it on the watch. Notifications from other apps are ignored.</dd>
+<dt>If you say no</dt><dd>Uni Call cannot see calls or messages, so your watch receives nothing from Uni Call.</dd>
+</dl>
+<p class="note">SMS are read only from their notifications; Uni Call has no permission to read your SMS inbox. Message text is not stored.</p>
+</div>
+
+<div class="card">
+<div class="card-h"><h3>Contacts (read and write)</h3><span class="tag">Caller names</span></div>
+<dl>
+<dt>Used to</dt><dd>Show the caller's name exactly as it appears in your contacts. For callers who are not in your contacts, the app creates a temporary contact “Zalo &lt;name&gt;” (or “Mess &lt;name&gt;”…) with an 8-digit alias number that cannot be dialled, stored in a separate “Uni Call” contacts account that is never synced online, so the watch's call screen can show a name.</dd>
+<dt>If you say no</dt><dd>The watch may show “Unknown” or only the app name instead of the caller.</dd>
+</dl>
+<p class="note">Uni Call never edits or deletes your own contacts and never sends your contacts anywhere. How to remove temporary contacts: see <a href="#retention">Keeping and deleting data</a>.</p>
+</div>
+
+<div class="card">
+<div class="card-h"><h3>Phone and calls</h3><span class="tag">Calls</span></div>
+<dl>
+<dt>Used to</dt><dd><ul>
+<li>Know whether a SIM call or another app's call is in progress, so the same call is not announced twice.</li>
+<li>Set up a temporary call inside the phone so the watch rings with its own call screen and you can talk through the watch's microphone and speaker. This call does not go through your carrier, costs nothing and never dials out.</li>
+<li>On some watches: use the “Uni Call calling account” that you enable yourself in Android settings, so the watch's app can read the caller name.</li>
+</ul></dd>
+<dt>If you say no</dt><dd>Calls can still be announced by a notification card or the Uni Call watch app, but will not ring like a phone call.</dd>
+</dl>
+<p class="note">Uni Call never listens to, records or relays the content of any call.</p>
+</div>
+
+<div class="card">
+<div class="card-h"><h3>Watch link</h3><span class="tag">Caller names · Android 12+</span></div>
+<dl>
+<dt>Used to</dt><dd>An official Android feature that lets a watch companion app see ongoing calls. Uni Call only reads the identifier of Messenger, LINE, WhatsApp, Telegram and Viber calls to create a temporary contact, so the watch shows a name instead of a string of digits.</dd>
+<dt>If you say no</dt><dd>For those calls, the watch may show digits instead of a name.</dd>
+</dl>
+<p class="note">Uni Call does not answer, decline or change the audio of any call through this feature.</p>
+</div>
+
+<div class="card">
+<div class="card-h"><h3>Nearby devices (Bluetooth)</h3><span class="tag">Watch connection</span></div>
+<dl>
+<dt>Used to</dt><dd>List watches that are already paired and check whether the watch is connected for Bluetooth calls.</dd>
+<dt>If you say no</dt><dd>The app cannot pick a watch to link and cannot warn you when the watch loses its call connection.</dd>
+</dl>
+<p class="note">Uni Call does not scan for or pair new devices.</p>
+</div>
+
+<div class="card">
+<div class="card-h"><h3>Display over other apps</h3><span class="tag">Calls</span></div>
+<dl>
+<dt>Used to</dt><dd>When you press Answer on the watch, open Zalo's answer screen from the background (Android 14 and later require this permission).</dd>
+<dt>If you say no</dt><dd>You may need to open Zalo on the phone yourself to answer.</dd>
+</dl>
+<p class="note">Uni Call does not use this permission to read or capture the screen, and does not use Accessibility.</p>
+</div>
+
+<div class="card">
+<div class="card-h"><h3>Location (precise, approximate)</h3><span class="tag">Maps · Directions</span></div>
+<dl>
+<dt>Used to</dt><dd>Draw the map, find routes, speak turn instructions and send the map to the watch when you use the Go-to feature or navigate with Google Maps.</dd>
+<dt>If you say no</dt><dd>Maps and directions cannot follow your position; calls and messages keep working. A watch with GPS and the Uni Call app can use its own GPS instead of the phone's.</dd>
+</dl>
+<p class="note">Coordinates stay in temporary memory only; they are not written to storage or to logs. The app uses location only while the map is open or a navigation session is running.</p>
+</div>
+
+<div class="card">
+<div class="card-h"><h3>Location while locked (“Allow all the time”)</h3><span class="tag opt">Optional · web edition only</span></div>
+<dl>
+<dt>Used to</dt><dd>Only to keep sending the phone's position to the map and turn guidance on your watch while the phone screen is locked during navigation. When the trip ends, the app stops using location.</dd>
+<dt>If you say no</dt><dd>Everything works while the phone screen is on; when the phone locks, the watch map stops following the phone's position (a watch with GPS can still follow on its own).</dd>
+</dl>
+<p class="note">Never used to track you outside navigation. Location is not stored and not sent to any server of ours.</p>
+</div>
+
+<div class="card">
+<div class="card-h"><h3>Microphone</h3><span class="tag">Speak to reply · web version only</span></div>
+<p class="note">The Google Play version does not include this feature and does not ask for the microphone permission.</p>
+<dl>
+<dt>Used to</dt><dd>Only while you speak to reply to a message through a call to your watch: the message appears on the watch's music controls, you press Play, the watch rings, you answer and speak. Your voice travels over the Bluetooth call channel, stays in temporary memory, and is handed to the phone's built-in speech recogniser (usually Google, which may process it online) to become text. The text is read back to you, then sent as the reply through the messaging app itself.</dd>
+<dt>If you say no</dt><dd>You only lose speak-to-reply; preset quick replies still work. You can also turn off “Speak to reply” (<i lang="vi">Nói để trả lời tin nhắn</i>) in Settings.</dd>
+</dl>
+<p class="note">Audio is never recorded to storage, never kept and never sent to us. Uni Call's background service is declared as using the microphone only so recognition can run while the phone is locked.</p>
+</div>
+
+<div class="card">
+<div class="card-h"><h3>Notifications, background work, battery</h3><span class="tag">Always ready</span></div>
+<dl>
+<dt>Used to</dt><dd>Show Uni Call's own notifications (call cards for watches without the Uni Call app, the Amazfit pairing code); run a background service and start with the phone so calls are not missed; ask to be excluded from battery optimisation; vibrate; check whether the phone is online.</dd>
+<dt>If you say no</dt><dd>Android may stop Uni Call in the background and your watch may miss calls.</dd>
+</dl>
+</div>
+
+<div class="card">
+<div class="card-h"><h3>Seeing certain other apps</h3><span class="tag">Compatibility</span></div>
+<dl>
+<dt>Used to</dt><dd>Uni Call declares only the apps it works with (calling and messaging apps, Google Maps, Petal Maps, Mi Fitness, Zepp, Galaxy Wearable, Garmin Connect, Huawei Health…) to show their icons, open them when you tap, and avoid clashing with other call-bridge apps.</dd>
+<dt>Not done</dt><dd>Uni Call does not request permission to see the full list of apps on your phone.</dd>
+</dl>
+</div>
+
+<div class="card">
+<div class="card-h"><h3>Installing the Uni Call app on a Xiaomi watch</h3><span class="tag opt">Optional</span></div>
+<dl>
+<dt>Used to</dt><dd>The watch app files are bundled in the Uni Call installer, not downloaded from a server. You can save the file to your phone's storage (you choose where) and install it yourself with Mi Fitness or AstroBox.</dd>
+<dt>Direct install (web edition only)</dt><dd>You pick the log file that Mi Fitness saved on your phone. Uni Call looks in that file for your watch's pairing key, and uses it to connect to the watch over Bluetooth and send the app.</dd>
+<dt>Not done</dt><dd>The log file and the pairing key are not stored (they stay in memory only while installing) and are not sent anywhere.</dd>
+</dl>
+</div>
+
+</div>
+</section>
+
+<section id="on-device" class="sec">
+<h2>Data stored on your phone</h2>
+<p>Whatever Uni Call stores sits in the app's private storage area, which Android does not let other apps read.</p>
+<div class="cols">
+<div>
+<h3>Stored</h3>
+<ul class="yes">
+<li>Your settings: features on / off, watch model, quick replies you wrote, Home / Work places if you save them.</li>
+<li>The list of temporary contacts Uni Call created (display name, alias number, contact ID), used only to remove exactly those contacts later.</li>
+<li>Technical notes without names or content: where the Answer / Decline buttons sit in each app's notification, which call notification channels were recognised, a few timestamps.</li>
+<li>A cache of map tiles (kept for up to about 14 days) and a list of tiles already sent to the watch, to avoid downloading again. These reveal which areas you have opened on the map.</li>
+<li>The pairing token for the Uni Call app on an Amazfit watch.</li>
+<li>A bug-report file, only when you tap “Send bug report” (<i lang="vi">Gửi báo lỗi</i>): created in the app's private cache so you can send it.</li>
+</ul>
+</div>
+<div>
+<h3>Not stored</h3>
+<ul class="no">
+<li>Message text.</li>
+<li>Call history: the recent-calls list lives only in temporary memory (at most 20 calls within 24 hours) and disappears when the app is closed.</li>
+<li>Location coordinates, destinations, routes.</li>
+<li>Audio: your voice when replying stays in temporary memory for recognition, then is dropped.</li>
+</ul>
+</div>
+</div>
+<div class="callout"><p>Uni Call opts out of Android backup: app data is not uploaded to Google Drive and is not transferred to a new phone.</p></div>
+<p><strong>On the watch:</strong> the Uni Call watch app stores map images and tiles to display the map. Your watch maker's app (Mi Fitness, Zepp, Galaxy Wearable, Garmin Connect, Huawei Health…) may keep a notification history under that maker's own policy.</p>
+</section>
+
+<section id="leaves" class="sec">
+<h2>Data that leaves your phone</h2>
+<p>Data leaves the phone only in the cases below, and goes directly to the place named. No copy passes through us.</p>
+<div class="flows">
+<div class="flow"><div>
+<h3>When you search for a place</h3>
+<dl><dt>Sent</dt><dd>The text you type, plus the phone's current position so nearby results come first.</dd>
+<dt>To</dt><dd>Android's built-in geocoder (usually provided by Google); Photon by komoot; Nominatim by the OpenStreetMap Foundation when Photon does not respond.</dd></dl>
+</div></div>
+<div class="flow"><div>
+<h3>When you share a place from Google Maps to Uni Call</h3>
+<dl><dt>Sent</dt><dd>The shortened Google Maps link is opened over the network to read the coordinates inside it.</dd>
+<dt>To</dt><dd>Google's servers.</dd></dl>
+</div></div>
+<div class="flow"><div>
+<h3>When the app finds a route</h3>
+<dl><dt>Sent</dt><dd>Coordinates of the start, any stops and the destination. If you leave the route, the app asks again from your new position.</dd>
+<dt>To</dt><dd>BRouter (brouter.de); the OSRM service run by FOSSGIS (routing.openstreetmap.de) when BRouter does not respond.</dd></dl>
+</div></div>
+<div class="flow"><div>
+<h3>When map tiles are downloaded</h3>
+<dl><dt>Sent</dt><dd>Map tile numbers, which means the area you are viewing or travelling through.</dd>
+<dt>To</dt><dd>GitHub (which hosts Uni Call's Vietnam map file); OpenFreeMap (tiles.openfreemap.org); the OpenStreetMap tile server (tile.openstreetmap.org) when the other two are unavailable.</dd></dl>
+</div></div>
+<div class="flow"><div>
+<h3>When you open Google Maps to navigate</h3>
+<dl><dt>Sent</dt><dd>The destination and any stops.</dd>
+<dt>To</dt><dd>The Google Maps app on your phone; from there Google handles it under Google's policy.</dd></dl>
+</div></div>
+<div class="flow"><div>
+<h3>When content goes to your watch</h3>
+<dl><dt>Sent</dt><dd>Caller names, message text, turn instructions, map images and tiles, and your position while navigating.</dd>
+<dt>To</dt><dd>Your watch, over Bluetooth and through the watch maker's app on the phone (Mi Fitness, Zepp, Galaxy Wearable / Wear OS, Garmin Connect, Huawei Health…). For Amazfit, the Zepp app fetches data from Uni Call through a port that is open only inside the phone (127.0.0.1); other devices on the network cannot see it.</dd></dl>
+</div></div>
+<div class="flow"><div>
+<h3>When you send a bug report</h3>
+<dl><dt>Sent</dt><dd>The content described under <a href="#bug-report">Bug reports</a>.</dd>
+<dt>To</dt><dd>Your email app, pre-addressed to buiduongquoc71@gmail.com, or any other destination you pick in the share sheet. You review it and press send yourself.</dd></dl>
+</div></div>
+<div class="flow"><div>
+<h3>When you speak a reply and when the app reads aloud</h3>
+<dl><dt>Speech recognition</dt><dd>Your spoken clip is handed to the phone's speech recognition service (usually Google), which runs on the device or online depending on the phone. The resulting text is sent as the reply through the messaging app (Zalo, Messenger…).</dd>
+<dt>Reading aloud</dt><dd>Replies and turn instructions are read by the phone's built-in text-to-speech engine, chosen by you in Android settings.</dd></dl>
+</div></div>
+</div>
+<div class="callout">
+<p>As with any Internet connection, servers see your IP address and the app name and version (for example “Uni Call/1.0.1”). Requests carry no name, phone number, contacts, messages or device identifiers, and travel over encrypted HTTPS.</p>
+<p>Each service handles data under its own policy; see <a href="#third-parties">Third-party services</a>.</p>
+</div>
+</section>
+
+<section id="bug-report" class="sec">
+<h2>Bug reports</h2>
+<ul>
+<li>A report is created only when you tap <strong>Send bug report</strong> (<i lang="vi">Gửi báo lỗi</i>) in Settings › Support (<i lang="vi">Cài đặt › Hỗ trợ</i>). The app builds a plain-text file in its private cache, then opens the share sheet or your email app pre-addressed to buiduongquoc71@gmail.com. You can review it, change the destination, and press send yourself.</li>
+<li><strong>Included:</strong> phone maker and model, Android and Uni Call versions, Uni Call settings, watch model, permission status of Uni Call and related apps (Zalo, Messenger, the watch app), recent calls with only the app name, time, outcome and duration, and technical logs of the app and the watch channel.</li>
+<li><strong>Not included:</strong> caller names, phone numbers, message text, coordinates. In release builds, personal values in technical logs are replaced with “(ẩn)” (hidden).</li>
+<li>If you send it somewhere else from the share sheet (for example a group chat), people there may see it.</li>
+<li>The file in the cache is deleted when you clear the app's cache or uninstall the app. The copy you sent stays wherever you sent it (for example your email's Sent folder).</li>
+<li>We use reports only to find and fix problems and delete them when no longer needed. You can ask us to delete yours at any time.</li>
+</ul>
+</section>
+
+<section id="never" class="sec">
+<h2>What Uni Call does not do</h2>
+<ul class="no">
+<li>No account creation, no sign-in.</li>
+<li>No advertising and no in-app purchases.</li>
+<li>No analytics, measurement, tracking or automatic crash-reporting tools.</li>
+<li>No selling, renting or trading of your data with anyone.</li>
+<li>No listening to or recording of calls; the microphone is used only while you speak a reply.</li>
+<li>No use of Accessibility to read the screen.</li>
+<li>No uploading of contacts, messages or call history.</li>
+<li>No location requests when you are not using maps or directions.</li>
+</ul>
+</section>
+
+<section id="retention" class="sec">
+<h2>Keeping and deleting data</h2>
+<ul>
+<li><strong>Turn features off</strong> in Uni Call's Settings.</li>
+<li><strong>Revoke permissions:</strong> Android Settings › Apps › Uni Call › Permissions.</li>
+<li><strong>Temporary contacts:</strong> by default they are removed when the call ends, or when the app next starts if it was closed mid-call. If you turn on “Keep caller-name contacts” (<i lang="vi">Giữ liên hệ tên người gọi</i>), contacts unused for 30 days are removed automatically and at most 40 are kept. To remove them now: Uni Call › Settings › Privacy &amp; data (<i lang="vi">Quyền riêng tư &amp; dữ liệu</i>) › “Delete … temporary contacts” (<i lang="vi">Xoá … liên hệ tạm</i>) (turning the keep switch off also removes them all).</li>
+<li><strong>Clear app data:</strong> Android Settings › Apps › Uni Call › Storage › Clear data.</li>
+<li><strong>Uninstall:</strong> removes all app data, including the Uni Call contacts account and the temporary contacts inside it. If your phone does not allow a separate account, temporary contacts live in the phone's local contacts: tap “Delete temporary contacts” before uninstalling.</li>
+<li><strong>Bug-report files</strong> live in the app's cache: clear them in Android Settings › Apps › Uni Call › Storage › Clear cache, or they go away when you uninstall.</li>
+<li><strong>On the watch:</strong> uninstall the Uni Call watch app to remove stored map images and tiles.</li>
+</ul>
+<p class="muted">We keep none of your data on servers, so there is no account to delete. For a bug report you sent us, write to us via <a href="#contact">Contact</a> and we will delete it.</p>
+</section>
+
+<section id="children" class="sec">
+<h2>Children</h2>
+<p>Uni Call is not directed at children under 13 and we do not knowingly collect children's data. If you are a parent and believe your child sent us a bug report, contact us and we will delete it.</p>
+</section>
+
+<section id="security" class="sec">
+<h2>Security</h2>
+<ul>
+<li>Data stays in the app's private storage, which other apps cannot read. Android backup is turned off: data is not uploaded to Google Drive and not moved to a new phone.</li>
+<li>All network connections use HTTPS; the app does not allow unencrypted connections.</li>
+<li>Uni Call has no servers, accounts or passwords, so there is no store of user data to leak.</li>
+<li>In release builds, technical logs replace caller names, phone numbers and content with “(hidden)”, including in bug reports.</li>
+<li>The parts of the app the system calls into (notification access, calling service, call observer, contacts account) are protected by Android system permissions; other apps cannot call them directly.</li>
+<li>The watch pairing key (web edition only, during direct install) stays in memory only while installing and is never written anywhere.</li>
+<li>The port for the Zepp app is open only inside the phone (127.0.0.1), requires pairing with a code shown on the phone, and uses a private access token.</li>
+<li>The Uni Call contacts account has no password and is never synced online.</li>
+<li>The app checks its own signature: a copy that was modified and re-signed will not run, to protect your calls, messages and contacts. Install Uni Call from Google Play or the official release page; copies shared elsewhere are not supported.</li>
+<li>No system is perfectly secure. If you find a vulnerability, please report it to us privately by Gmail.</li>
+</ul>
+</section>
+
+<section id="third-parties" class="sec">
+<h2>Third-party services</h2>
+<p>These services receive only what is described under <a href="#leaves">Data that leaves your phone</a>, and handle it under their own policies:</p>
+<ul>
+<li>Photon (komoot): <a href="https://photon.komoot.io/">photon.komoot.io</a> · <a href="https://www.komoot.com/privacy">komoot privacy policy</a></li>
+<li>Nominatim and the OpenStreetMap tile server: <a href="https://osmfoundation.org/wiki/Privacy_Policy">OpenStreetMap Foundation privacy policy</a></li>
+<li>BRouter: <a href="https://brouter.de/">brouter.de</a></li>
+<li>OSRM operated by FOSSGIS: <a href="https://routing.openstreetmap.de/">routing.openstreetmap.de</a></li>
+<li>OpenFreeMap: <a href="https://openfreemap.org/">openfreemap.org</a></li>
+<li>GitHub (hosts the Vietnam map file and this page): <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">GitHub General Privacy Statement</a></li>
+<li>Google (Android geocoder, Google Maps links, speech recognition, Gmail): <a href="https://policies.google.com/privacy">policies.google.com/privacy</a></li>
+<li>Watch makers' apps: Mi Fitness (<a href="https://privacy.mi.com/">privacy.mi.com</a>), Zepp, Galaxy Wearable, Wear OS, Garmin Connect, Huawei Health — under each maker's own policy.</li>
+</ul>
+<p>Uni Call bundles two libraries from watch makers. Both only talk to that maker's app on the same phone; neither sends anything to the internet from Uni Call:</p>
+<ul>
+<li>Xiaomi's watch connection library: passes messages between Uni Call and the Uni Call watch app, through Mi Fitness.</li>
+<li>Huawei Wear Engine: for a Uni Call app on Huawei watches, through Huawei Health. In version 1.0.1 it is not switched on.</li>
+</ul>
+</section>
+
+<section id="your-rights" class="sec">
+<h2>Your rights</h2>
+<p>Under Vietnamese personal-data protection law and similar rules where you live, you have the right to be informed, to give or withdraw consent, to access, correct and delete your data, to restrict processing and to complain. With Uni Call, most of these can be exercised directly on your phone:</p>
+<ul>
+<li><strong>Be informed:</strong> this page and the “Before using Uni Call” notice (<i lang="vi">Trước khi dùng Uni Call</i>) in the app.</li>
+<li><strong>Consent or withdraw:</strong> grant or revoke permissions in Android, turn features off, or uninstall.</li>
+<li><strong>Delete:</strong> see <a href="#retention">Keeping and deleting data</a>.</li>
+<li><strong>Questions, requests, complaints:</strong> contact us; you may also complain to the competent authority.</li>
+</ul>
+</section>
+
+<section id="changes" class="sec">
+<h2>When this policy changes</h2>
+<ul>
+<li>New versions are published at this same address, with a new effective date and a summary of changes below.</li>
+<li>Important changes (for example, a new kind of data leaving the phone) will be announced in the app, which will ask for your consent again.</li>
+</ul>
+<ul class="history">
+<li><strong>28/10/2026</strong> — Explains how the Google Play and web editions differ; adds saving the watch app file; states that direct install reads the watch pairing key; lists the two watch-maker libraries; removes the Telegram channel.</li>
+<li><strong>14/10/2026</strong> — First version, covering Uni Call 1.0.1.</li>
+</ul>
+</section>
+
+<section id="contact" class="sec">
+<h2>Contact</h2>
+<p>For privacy questions, deletion requests or security reports, reach us at:</p>
+<div class="contact">
+<a class="c" href="mailto:buiduongquoc71@gmail.com"><span class="k">Gmail</span><span class="v">buiduongquoc71@gmail.com</span></a>
+</div>
+<p class="muted small">In the app: Settings › Support (<i lang="vi">Cài đặt › Hỗ trợ</i>) › Mail. The app is available in Vietnamese and English; Vietnamese labels are shown in italics on this page. The Vietnamese version of this policy is the reference text. See also <a href="../../terms/en/index.html">Intellectual property &amp; terms</a>.</p>
+</section>
+
+</main></div>
+<footer class="foot"><div class="wrap foot-in">
+<div><p>© 2026 Bùi Dương Quốc · Uni Call. All rights reserved, except third-party material.</p><p>Static page: no cookies, no tracking code, nothing loaded from other sites. Hosted on GitHub Pages; GitHub may keep access logs under its own policy.</p></div>
+<div class="foot-links"><a href="../../index.html">Documents home</a><a href="#top">Back to top</a></div>
+</div></footer>
+</body>
+</html>

@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sở hữu trí tuệ và điều khoản – Uni Call</title>
+<meta name="description" content="Những gì thuộc về Uni Call, nhãn hiệu và mã nguồn mở của bên thứ ba, cam kết phát triển độc lập và điều kiện sử dụng.">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#1f6fe0" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0a111d" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 108 108"%3E %3Cdefs%3E%3ClinearGradient id="gf" x1="18" y1="10" x2="90" y2="100" gradientUnits="userSpaceOnUse"%3E %3Cstop offset="0" stop-color="#2B7DF0"/%3E%3Cstop offset="1" stop-color="#0FA3B1"/%3E%3C/linearGradient%3E%3C/defs%3E %3Crect width="108" height="108" rx="26" fill="url%28#gf%29"/%3E %3Cpath fill="#fff" fill-opacity=".9" d="M45 37l1.5-11.5Q47 23 49.5 23h9q2.5 0 3 2.5L63 37zM45 71l1.5 11.5Q47 85 49.5 85h9q2.5 0 3-2.5L63 71z"/%3E %3Cpath fill="#fff" d="M74 50h3a1.5 1.5 0 0 1 1.5 1.5v5A1.5 1.5 0 0 1 77 58h-3z"/%3E %3Ccircle cx="54" cy="54" r="21" fill="#fff"/%3E%3Ccircle cx="54" cy="54" r="17" fill="#0B3D91"/%3E %3Cg transform="translate%2842.6 42.6%29 scale%28.95%29"%3E%3Cpath fill="#fff" d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/%3E%3C/g%3E %3Ccircle cx="68.5" cy="39.5" r="6" fill="#FBBC04" stroke="#1F6FE0" stroke-width="2"/%3E %3C/svg%3E">
+<link rel="alternate" hreflang="vi" href="../vi/index.html"><link rel="alternate" hreflang="en" href="../en/index.html">
+<style>
+:root{
+  --bg:#f4f7fb;--surface:#ffffff;--surface-2:#edf3fa;--text:#0e1a2b;--muted:#4b5b72;--line:#d9e2ee;
+  --brand:#1f6fe0;--brand-2:#0fa3b1;--accent:#f5b400;--link:#1557c4;--bar:rgba(244,247,251,.92);
+  --keep:#0d7466;--keep-bg:#e2f4f0;--out:#1a5fc8;--out-bg:#e6effd;--never:#a93f17;--never-bg:#fbeae3;
+  --hero-a:#2b7df0;--hero-b:#0fa3b1;
+  --shadow:0 1px 2px rgba(14,26,43,.05),0 6px 18px rgba(14,26,43,.06);--radius:16px;color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#0a111d;--surface:#111b2b;--surface-2:#172437;--text:#e5ecf6;--muted:#a3b1c6;--line:#25354d;
+    --brand:#5b9dff;--brand-2:#35c2cd;--accent:#ffcc3d;--link:#86b9ff;--bar:rgba(10,17,29,.92);
+    --keep:#4fd3bb;--keep-bg:#0f2f2b;--out:#8ab7ff;--out-bg:#14263f;--never:#ff9c70;--never-bg:#381c12;
+    --hero-a:#1a4fa3;--hero-b:#0a6a73;--shadow:none;color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0a111d;--surface:#111b2b;--surface-2:#172437;--text:#e5ecf6;--muted:#a3b1c6;--line:#25354d;
+  --brand:#5b9dff;--brand-2:#35c2cd;--accent:#ffcc3d;--link:#86b9ff;--bar:rgba(10,17,29,.92);
+  --keep:#4fd3bb;--keep-bg:#0f2f2b;--out:#8ab7ff;--out-bg:#14263f;--never:#ff9c70;--never-bg:#381c12;
+  --hero-a:#1a4fa3;--hero-b:#0a6a73;--shadow:none;color-scheme:dark;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans","Helvetica Neue",Arial,sans-serif;overflow-wrap:break-word}
+a{color:var(--link);text-underline-offset:2px}
+a:focus-visible,summary:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:6px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 16px}
+.skip{position:absolute;left:-9999px;top:8px;z-index:100;background:var(--surface);color:var(--text);padding:8px 14px;border-radius:8px;border:2px solid var(--brand)}
+.skip:focus{left:16px}
+/* Thanh trên */
+.topbar{position:sticky;top:0;z-index:20;background:var(--bar);-webkit-backdrop-filter:saturate(1.4) blur(10px);backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid var(--line)}
+.topbar-in{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;min-height:58px;padding-top:6px;padding-bottom:6px}
+.brand{display:flex;align-items:center;gap:9px;font-weight:700;font-size:1.05rem;color:var(--text);text-decoration:none;letter-spacing:-.01em}
+.logo{display:block;flex:none;border-radius:22%}
+.docnav{display:flex;flex-wrap:wrap;gap:4px;margin-left:auto}
+.docnav a{padding:6px 12px;border-radius:999px;font-size:.9rem;color:var(--muted);text-decoration:none;white-space:nowrap}
+.docnav a:hover{color:var(--text);background:var(--surface-2)}
+.docnav a[aria-current]{background:var(--surface-2);color:var(--text);font-weight:600}
+.lang{display:flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;flex:none}
+.lang a{padding:4px 11px;font-size:.78rem;font-weight:700;letter-spacing:.06em;color:var(--muted);text-decoration:none}
+.lang a[aria-current]{background:var(--brand);color:#fff}
+@media (max-width:639px){
+  .hide-sm{display:none}
+  .docnav{order:3;width:100%;margin-left:0}
+  .lang{margin-left:auto}
+}
+/* Băng đầu trang */
+.hero{position:relative;overflow:hidden;color:#fff;background:linear-gradient(135deg,var(--hero-a),var(--hero-b));padding:40px 0 46px}
+.hero::before,.hero::after{content:"";position:absolute;border-radius:50%;pointer-events:none}
+.hero::before{right:-90px;top:-110px;width:340px;height:340px;border:30px solid rgba(255,255,255,.09)}
+.hero::after{right:150px;bottom:-70px;width:120px;height:120px;background:rgba(251,188,4,.22)}
+.hero .wrap{position:relative;z-index:1}
+.eyebrow{margin:0;font-size:.8rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;opacity:.9}
+.hero h1{font-size:clamp(1.7rem,5.4vw,2.6rem);line-height:1.18;letter-spacing:-.015em;margin:.25em 0 .35em}
+.lede{max-width:44rem;margin:0;font-size:1.05rem;opacity:.96}
+.chips{list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 0;padding:0}
+.chips li{background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.3);border-radius:999px;padding:3px 12px;font-size:.84rem}
+/* Bố cục */
+.layout{display:grid;grid-template-columns:minmax(0,1fr);gap:24px;padding-top:24px;padding-bottom:40px}
+@media (min-width:960px){.layout{grid-template-columns:232px minmax(0,1fr);gap:36px;padding-top:32px}}
+.toc-side{display:none}
+@media (min-width:960px){
+  .toc-side{display:block;position:sticky;top:78px;align-self:start;max-height:calc(100vh - 96px);overflow:auto;font-size:.9rem}
+  .toc-mob{display:none}
+}
+.toc-title{margin:0 0 8px;font-size:.76rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.toc ol{list-style:none;margin:0;padding:0}
+.toc li a{display:block;padding:5px 10px;border-left:2px solid var(--line);color:var(--muted);text-decoration:none;line-height:1.4}
+.toc li a:hover{color:var(--text);border-left-color:var(--brand)}
+.toc-mob{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:12px 16px}
+.toc-mob summary{cursor:pointer;font-weight:600}
+.toc-mob ol{margin-top:10px}
+main{min-width:0}
+/* Mục */
+.sec{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:22px 18px;margin:0 0 18px;box-shadow:var(--shadow);scroll-margin-top:118px}
+@media (min-width:640px){.sec{padding:28px 32px;scroll-margin-top:82px}}
+.sec h2{display:flex;align-items:center;gap:12px;margin:0 0 12px;font-size:1.28rem;line-height:1.3;letter-spacing:-.01em}
+.sec h2::before{content:"";flex:none;width:10px;height:10px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 3px var(--surface),0 0 0 5px var(--brand)}
+.sec h3{margin:0;font-size:1.04rem;line-height:1.4}
+.sec p,.sec ul,.sec ol{margin:.55em 0}
+.sec ul,.sec ol{padding-left:1.25em}
+.sec li{margin:.3em 0}
+.sec > :last-child{margin-bottom:0}
+.muted{color:var(--muted)}
+.small{font-size:.92rem}
+.mono{font-family:ui-monospace,SFMono-Regular,Consolas,"Liberation Mono",monospace;font-size:.88em;background:var(--surface-2);padding:1px 6px;border-radius:6px;overflow-wrap:anywhere}
+.callout{background:var(--surface-2);border-left:4px solid var(--brand-2);border-radius:10px;padding:12px 16px;margin:14px 0}
+.callout p{margin:.3em 0}
+/* Ba ô tóm tắt */
+.tiles{display:grid;grid-template-columns:minmax(0,1fr);gap:12px;margin-top:16px}
+@media (min-width:700px){.tiles{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.tile{border-radius:14px;padding:16px}
+.tile p{margin:0}
+.tile-k{display:flex;align-items:center;gap:8px;font-weight:700;margin:0 0 6px!important}
+.tile-k svg{flex:none}
+.tile-keep{background:var(--keep-bg)}.tile-keep .tile-k{color:var(--keep)}
+.tile-out{background:var(--out-bg)}.tile-out .tile-k{color:var(--out)}
+.tile-never{background:var(--never-bg)}.tile-never .tile-k{color:var(--never)}
+/* Nguyên tắc */
+.principles{list-style:none;padding:0!important;display:grid;grid-template-columns:minmax(0,1fr);gap:12px;counter-reset:p}
+@media (min-width:700px){.principles{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.principles li{counter-increment:p;position:relative;margin:0;padding:14px 16px 14px 58px;border:1px solid var(--line);border-radius:14px}
+.principles li::before{content:counter(p);position:absolute;left:16px;top:14px;width:30px;height:30px;border-radius:50%;display:grid;place-items:center;font-weight:800;color:#fff;background:linear-gradient(135deg,var(--hero-a),var(--hero-b))}
+.principles strong{display:block}
+/* Thẻ quyền / thẻ giấy phép */
+.cards{display:grid;gap:12px;margin-top:14px}
+.card{border:1px solid var(--line);border-radius:14px;padding:16px}
+.card-h{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:6px 12px;margin-bottom:10px}
+.tag{display:inline-block;font-size:.74rem;font-weight:700;padding:2px 10px;border-radius:999px;background:var(--out-bg);color:var(--out)}
+.tag.off{background:var(--surface-2);color:var(--muted)}
+.tag.opt{background:var(--keep-bg);color:var(--keep)}
+.card dl,.flow dl{margin:0;display:grid;grid-template-columns:minmax(0,1fr);gap:2px 18px}
+@media (min-width:640px){.card dl,.flow dl{grid-template-columns:168px minmax(0,1fr)}}
+.card dt,.flow dt{font-weight:600;font-size:.88rem;color:var(--muted);padding-top:1px}
+.card dd,.flow dd{margin:0 0 8px}
+.card dd:last-child,.flow dd:last-child{margin-bottom:0}
+.card dd ul{margin:.2em 0;padding-left:1.1em}
+.note{margin:10px 0 0!important;padding-top:10px;border-top:1px dashed var(--line);font-size:.92rem;color:var(--muted)}
+/* Luồng dữ liệu */
+.flows{counter-reset:f;margin-top:8px}
+.flow{counter-increment:f;display:grid;grid-template-columns:34px minmax(0,1fr);gap:12px;padding:16px 0;border-top:1px solid var(--line)}
+.flow:first-child{border-top:0;padding-top:6px}
+.flow::before{content:counter(f);width:32px;height:32px;border-radius:50%;display:grid;place-items:center;font-weight:800;background:var(--out-bg);color:var(--out)}
+.flow h3{margin:4px 0 8px}
+/* Danh sách có / không */
+.yes,.no{list-style:none;padding-left:0!important}
+.yes li,.no li{position:relative;padding-left:1.7em}
+.yes li::before,.no li::before{position:absolute;left:0;top:0;font-weight:800}
+.yes li::before{content:"\2713";color:var(--keep)}
+.no li::before{content:"\2715";color:var(--never)}
+.cols{display:grid;grid-template-columns:minmax(0,1fr);gap:4px 28px}
+@media (min-width:700px){.cols{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.cols h3{margin-top:10px}
+/* Liên hệ */
+.contact{display:grid;grid-template-columns:minmax(0,1fr);gap:12px;margin-top:12px}
+@media (min-width:640px){.contact{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.contact a.c{display:block;border:1px solid var(--line);border-radius:14px;padding:14px 16px;text-decoration:none;color:var(--text)}
+.contact a.c:hover{border-color:var(--brand)}
+.contact .k{display:block;font-size:.8rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.contact .v{display:block;font-weight:600;color:var(--link);overflow-wrap:anywhere}
+.history{list-style:none;padding:0!important}
+.history li{padding:8px 0;border-top:1px solid var(--line)}
+.history li:first-child{border-top:0}
+/* Chân trang */
+.foot{border-top:1px solid var(--line);padding:22px 0 36px;font-size:.88rem;color:var(--muted)}
+.foot-in{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px 24px}
+.foot p{margin:.2em 0}
+.foot-links{display:flex;flex-wrap:wrap;gap:6px 16px}
+/* Trang chủ tài liệu */
+.home-hero{text-align:left}
+.home-hero .logo{width:64px;height:64px;margin-bottom:14px;box-shadow:0 6px 24px rgba(0,0,0,.18)}
+.docs{display:grid;grid-template-columns:minmax(0,1fr);gap:16px;padding-top:28px;padding-bottom:20px}
+@media (min-width:760px){.docs{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.doc{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:22px 20px;box-shadow:var(--shadow)}
+.doc h2{margin:0 0 4px;font-size:1.2rem}
+.doc .en{margin:0 0 10px;color:var(--muted);font-size:.95rem}
+.doc p{margin:.4em 0 14px}
+.btns{display:flex;flex-wrap:wrap;gap:8px}
+.btn{display:inline-flex;align-items:center;gap:6px;padding:9px 16px;border-radius:999px;background:var(--brand);color:#fff;text-decoration:none;font-weight:600;font-size:.94rem}
+.btn.ghost{background:transparent;color:var(--link);border:1px solid var(--line)}
+.btn:hover{filter:brightness(1.07)}
+@media print{
+  .topbar,.toc-side,.toc-mob,.skip{display:none!important}
+  .hero{background:none;color:#000;padding:0 0 12px}
+  .hero::before,.hero::after{display:none}
+  .chips li{border-color:#999;background:none}
+  .sec{box-shadow:none;break-inside:avoid-page}
+  .layout{display:block}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Bỏ qua, tới nội dung</a>
+<header class="topbar" id="top"><div class="wrap topbar-in">
+<a class="brand" href="../../index.html"><svg class="logo" width="28" height="28" viewBox="0 0 108 108" role="img" aria-label="Uni Call">
+<defs><linearGradient id="gh" x1="18" y1="10" x2="90" y2="100" gradientUnits="userSpaceOnUse">
+<stop offset="0" stop-color="#2B7DF0"/><stop offset="1" stop-color="#0FA3B1"/></linearGradient></defs>
+<rect width="108" height="108" rx="26" fill="url(#gh)"/>
+<path fill="#fff" fill-opacity=".9" d="M45 37l1.5-11.5Q47 23 49.5 23h9q2.5 0 3 2.5L63 37zM45 71l1.5 11.5Q47 85 49.5 85h9q2.5 0 3-2.5L63 71z"/>
+<path fill="#fff" d="M74 50h3a1.5 1.5 0 0 1 1.5 1.5v5A1.5 1.5 0 0 1 77 58h-3z"/>
+<circle cx="54" cy="54" r="21" fill="#fff"/><circle cx="54" cy="54" r="17" fill="#0B3D91"/>
+<g transform="translate(42.6 42.6) scale(.95)"><path fill="#fff" d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></g>
+<circle cx="68.5" cy="39.5" r="6" fill="#FBBC04" stroke="#1F6FE0" stroke-width="2"/>
+</svg><span>Uni Call</span></a>
+<nav class="docnav" aria-label="Tài liệu"><a href="../../privacy-policy/vi/index.html">Quyền riêng tư</a><a href="../../terms/vi/index.html" aria-current="page">Sở hữu trí tuệ<span class="hide-sm"> &amp; điều khoản</span></a></nav>
+<nav class="lang" aria-label="Ngôn ngữ"><a href="index.html" hreflang="vi" lang="vi" aria-current="true">VI</a><a href="../en/index.html" hreflang="en" lang="en">EN</a></nav>
+</div></header>
+<div class="hero"><div class="wrap"><p class="eyebrow">Uni Call · pháp lý</p><h1>Sở hữu trí tuệ &amp; điều khoản sử dụng</h1><p class="lede">Cái gì thuộc về Uni Call, cái gì thuộc về người khác, Uni Call được làm ra như thế nào, và những điều kiện khi bạn dùng app.</p><ul class="chips"><li>Hiệu lực từ 28/10/2026</li><li>Áp dụng cho Uni Call 1.0.1</li><li>Luật áp dụng: Việt Nam</li></ul></div></div>
+<div class="wrap layout"><aside class="toc toc-side" aria-label="Trên trang này"><p class="toc-title">Trên trang này</p><ol><li><a href="#pham-vi">Phạm vi và chấp nhận</a></li><li><a href="#so-huu">Những gì thuộc về Uni Call</a></li><li><a href="#giay-phep">Quyền bạn được sử dụng</a></li><li><a href="#phi">Phí và thanh toán</a></li><li><a href="#doc-lap">Phát triển độc lập: học hỏi, không sao chép</a></li><li><a href="#nhan-hieu">Nhãn hiệu của bên thứ ba</a></li><li><a href="#ma-nguon-mo">Mã nguồn mở và dữ liệu</a></li><li><a href="#ban-do">Bản đồ và chủ quyền</a></li><li><a href="#khong-duoc">Những việc không được làm</a></li><li><a href="#phu-thuoc">Uni Call dựa vào ứng dụng khác</a></li><li><a href="#mien-tru">Miễn trừ bảo đảm và giới hạn trách nhiệm</a></li><li><a href="#ngung">Ngừng sử dụng</a></li><li><a href="#luat">Luật áp dụng</a></li><li><a href="#bao-cao">Báo cáo vi phạm</a></li><li><a href="#thay-doi">Thay đổi điều khoản</a></li><li><a href="#lien-he">Liên hệ</a></li></ol></aside><details class="toc toc-mob"><summary>Mục lục</summary><ol><li><a href="#pham-vi">Phạm vi và chấp nhận</a></li><li><a href="#so-huu">Những gì thuộc về Uni Call</a></li><li><a href="#giay-phep">Quyền bạn được sử dụng</a></li><li><a href="#phi">Phí và thanh toán</a></li><li><a href="#doc-lap">Phát triển độc lập: học hỏi, không sao chép</a></li><li><a href="#nhan-hieu">Nhãn hiệu của bên thứ ba</a></li><li><a href="#ma-nguon-mo">Mã nguồn mở và dữ liệu</a></li><li><a href="#ban-do">Bản đồ và chủ quyền</a></li><li><a href="#khong-duoc">Những việc không được làm</a></li><li><a href="#phu-thuoc">Uni Call dựa vào ứng dụng khác</a></li><li><a href="#mien-tru">Miễn trừ bảo đảm và giới hạn trách nhiệm</a></li><li><a href="#ngung">Ngừng sử dụng</a></li><li><a href="#luat">Luật áp dụng</a></li><li><a href="#bao-cao">Báo cáo vi phạm</a></li><li><a href="#thay-doi">Thay đổi điều khoản</a></li><li><a href="#lien-he">Liên hệ</a></li></ol></details><main id="main">
+<section id="pham-vi" class="sec">
+<h2>Phạm vi và chấp nhận</h2>
+<ul>
+<li>Điều khoản này áp dụng cho app Android Uni Call, các app Uni Call trên đồng hồ, file bản đồ Việt Nam của Uni Call, tài liệu hướng dẫn và các trang web này (gọi chung là “Uni Call”).</li>
+<li>Khi cài đặt hoặc sử dụng Uni Call, bạn đồng ý với điều khoản này và với <a href="../../privacy-policy/vi/index.html">Chính sách quyền riêng tư</a>. Lần mở đầu tiên, app hiện mục “Trước khi dùng Uni Call” để bạn đọc và đồng ý.</li>
+<li>Nếu không đồng ý, xin đừng sử dụng và hãy gỡ app.</li>
+</ul>
+</section>
+
+<section id="so-huu" class="sec">
+<h2>Những gì thuộc về Uni Call</h2>
+<p>Trừ các thành phần của bên thứ ba nêu ở mục <a href="#ma-nguon-mo">Mã nguồn mở và dữ liệu</a>, những thứ sau là tài sản trí tuệ của Bùi Dương Quốc, tác giả Uni Call:</p>
+<ul>
+<li><strong>Tên Uni Call và logo</strong>: mặt đồng hồ xanh đậm với ống nghe trắng và chấm thông báo vàng, trên nền chuyển từ xanh dương sang xanh ngọc.</li>
+<li><strong>Mã nguồn do Uni Call viết</strong> cho app Android và các app đồng hồ (Xiaomi Vela, Amazfit Zepp OS, và mã cho đồng hồ Huawei đang phát triển).</li>
+<li><strong>Thiết kế</strong>: giao diện, bố cục màn hình đồng hồ, biểu tượng tự vẽ, cách trình bày bản đồ dẫn đường.</li>
+<li><strong>Nội dung chữ và hình</strong>: chữ trong app, hướng dẫn, ảnh quảng bá và các trang này.</li>
+</ul>
+<p>© 2026 Bùi Dương Quốc. Mọi quyền được bảo lưu.</p>
+<div class="callout"><p><strong>Riêng file bản đồ Việt Nam:</strong> đây là cơ sở dữ liệu phái sinh từ dữ liệu OpenStreetMap. Phần dữ liệu bản đồ trong đó thuộc giấy phép ODbL 1.0 và được cung cấp theo đúng giấy phép này, không phải tài sản riêng của Uni Call. Công sức của Uni Call nằm ở cách lọc, lược bỏ tên địa danh, ranh giới và cách vẽ.</p></div>
+</section>
+
+<section id="giay-phep" class="sec">
+<h2>Quyền bạn được sử dụng</h2>
+<ul>
+<li>Bạn được cấp quyền cá nhân, không độc quyền, không chuyển nhượng và có thể thu hồi để cài đặt và dùng Uni Call trên thiết bị bạn sở hữu hoặc quản lý, cho mục đích cá nhân.</li>
+<li>Uni Call được phát hành trên Google Play và trên trang phát hành chính thức của tác giả (bản web). Bạn được giới thiệu Uni Call và chia sẻ đường dẫn tới hai nơi này cho người khác. Các bản chia sẻ ở nơi khác không được hỗ trợ.</li>
+<li>Bạn không nhận quyền sở hữu nào đối với Uni Call.</li>
+</ul>
+</section>
+
+<section id="phi" class="sec">
+<h2>Phí và thanh toán</h2>
+<ul>
+<li>Uni Call 1.0.1 <strong>miễn phí</strong>: không thu phí tải về, không có mua hàng trong app, không có gói đăng ký trả phí định kỳ và không có quảng cáo. Mọi tính năng đều dùng được mà không phải trả tiền.</li>
+<li>Uni Call không hỏi, không nhận và không lưu thông tin thẻ, tài khoản ngân hàng hay ví điện tử của bạn.</li>
+<li>Chi phí của bên khác vẫn do bạn chịu theo hợp đồng của bạn với họ: dữ liệu di động khi tìm đường và tải bản đồ, cước Internet của Zalo, Messenger và các app gọi khác. Cuộc gọi tạm mà Uni Call dựng trong máy để đồng hồ reo không đi qua nhà mạng và không tính cước.</li>
+<li>Nếu sau này Uni Call có tính năng thu phí:
+<ul>
+<li>bản Google Play chỉ thu tiền qua hệ thống thanh toán của Google Play; Uni Call không tự thu tiền và không nhận thông tin thanh toán;</li>
+<li>giá, tính năng được mở và chu kỳ thanh toán (nếu là gói định kỳ) hiện rõ trước khi bạn xác nhận; gói định kỳ huỷ được bất cứ lúc nào trong Google Play › Thanh toán và gói thuê bao;</li>
+<li>hoàn tiền theo chính sách hoàn tiền của Google Play;</li>
+<li>điều khoản này và chính sách quyền riêng tư sẽ được cập nhật, ghi rõ phần nào thu phí, và app báo cho bạn trước khi áp dụng.</li>
+</ul></li>
+<li>Không ai được thu tiền của bạn nhân danh Uni Call (bán “bản Pro”, “bản quyền”, mã kích hoạt…). Gặp trường hợp như vậy, xin báo cho chúng tôi theo mục <a href="#bao-cao">Báo cáo vi phạm</a>.</li>
+</ul>
+</section>
+
+<section id="doc-lap" class="sec">
+<h2>Phát triển độc lập: học hỏi, không sao chép</h2>
+<p>Uni Call do Bùi Dương Quốc thiết kế và phát triển. Chúng tôi tôn trọng công sức của các nhà phát triển khác, kể cả các ứng dụng cùng lĩnh vực, và tự đặt cho mình những cam kết sau:</p>
+<ol class="principles">
+<li><strong>Mã của Uni Call, ghi công rõ phần của người khác</strong>Uni Call gồm mã do Uni Call viết và các thành phần mã nguồn mở của bên thứ ba. Mỗi thành phần của bên thứ ba được dùng theo giấy phép của nó và được ghi công ở mục dưới.</li>
+<li><strong>Học từ tài liệu công khai</strong>Cách Uni Call làm việc với Android và đồng hồ dựa trên tài liệu chính thức công khai (Android Developers, tài liệu quick app Xiaomi Vela, tài liệu Zepp OS, Wear OS), các tiêu chuẩn mở và kỹ thuật phổ biến trong ngành.</li>
+<li><strong>Ý tưởng chung không thuộc riêng ai</strong>Đưa thông báo lên đồng hồ, hiện tên người gọi hay chỉ đường trên cổ tay là nhu cầu chung mà nhiều ứng dụng cùng giải quyết. Khi tìm hiểu một ứng dụng khác, chúng tôi quan sát như một người dùng để hiểu nhu cầu và bảo đảm tương thích, rồi tự giải quyết theo cách của mình.</li>
+<li><strong>Tôn trọng tài sản của người khác</strong>Uni Call không dùng mã nguồn, câu chữ, hình ảnh, biểu tượng, âm thanh hay thiết kế của người khác khi chưa được phép. Phần nào được dùng theo giấy phép thì luôn ghi công.</li>
+</ol>
+<p><strong>Học hỏi để làm tốt hơn.</strong> Một vài điều Uni Call chọn làm theo cách riêng:</p>
+<ul class="yes">
+<li>Bản đồ Việt Nam tự dựng, không tên địa danh và không đường ranh giới; kết quả tìm kiếm ở Hoàng Sa, Trường Sa ghi theo địa danh Việt Nam.</li>
+<li>Xử lý ngay trên điện thoại: không máy chủ riêng, không tài khoản, không quảng cáo.</li>
+<li>Giải thích từng quyền kèm điều bạn mất khi từ chối; nhật ký báo lỗi chỉ rời máy khi bạn tự gửi.</li>
+<li>Một app chung cho nhiều hãng đồng hồ, có app riêng cho Xiaomi và Amazfit.</li>
+</ul>
+<p>Nếu bạn cho rằng Uni Call đang dùng nội dung của bạn mà chưa được phép, hãy báo cho chúng tôi theo mục <a href="#bao-cao">Báo cáo vi phạm</a>. Chúng tôi sẽ xem xét nghiêm túc và gỡ bỏ hoặc sửa lại nếu đúng.</p>
+</section>
+
+<section id="nhan-hieu" class="sec">
+<h2>Nhãn hiệu của bên thứ ba</h2>
+<ul>
+<li>Zalo (VNG); Messenger, Instagram, WhatsApp (Meta); LINE (LY Corporation); Telegram; Viber (Rakuten Viber); Google, Google Maps, Android, Wear OS (Google); Galaxy Watch, Galaxy Wearable (Samsung); Xiaomi, Redmi, Mi Fitness, Xiaomi Vela (Xiaomi); Huawei, Huawei Health, Petal Maps (Huawei); Amazfit, Zepp (Zepp Health); Garmin, Garmin Connect (Garmin) và các tên khác được nhắc tới là nhãn hiệu của chủ sở hữu tương ứng.</li>
+<li>Uni Call chỉ nhắc các tên này để mô tả khả năng tương thích, ví dụ “nhận cuộc gọi Zalo trên đồng hồ Xiaomi”. Việc nhắc tên không có nghĩa là các công ty đó tài trợ, chứng nhận hay hợp tác với Uni Call.</li>
+<li>Uni Call không dùng logo của các hãng làm nhận diện của mình. Ở nơi cần cho biết cuộc gọi đến từ app nào, Uni Call dùng tên app, màu nhận diện hoặc biểu tượng lấy từ chính app đã cài trên điện thoại của bạn.</li>
+</ul>
+</section>
+
+<section id="ma-nguon-mo" class="sec">
+<h2>Mã nguồn mở và dữ liệu</h2>
+<p>Uni Call biết ơn các dự án dưới đây. Mỗi thành phần thuộc chủ sở hữu của nó và theo giấy phép riêng; các giấy phép đó có thể cho bạn nhiều quyền hơn đối với chính thành phần ấy.</p>
+<p>Mọi mã nguồn mở của bên thứ ba có trong Uni Call, kể cả phần không nêu tên ở đây, đều được dùng theo giấy phép của nó, giữ nguyên thông báo bản quyền và ghi công tác giả gốc. Nếu thấy thiếu ghi công, xin báo cho chúng tôi để bổ sung.</p>
+<div class="cards">
+<div class="card"><div class="card-h"><h3>AndroidX, Jetpack Compose</h3><span class="tag">App Android</span></div>
+<dl><dt>Giấy phép</dt><dd><a href="https://www.apache.org/licenses/LICENSE-2.0">Apache License 2.0</a> · © Google / The Android Open Source Project</dd></dl></div>
+<div class="card"><div class="card-h"><h3>Bouncy Castle (bcprov)</h3><span class="tag">App Android</span></div>
+<dl><dt>Dùng cho</dt><dd>Mã hoá kết nối khi cài app Uni Call thẳng lên đồng hồ Xiaomi. Chỉ có ở bản web.</dd>
+<dt>Giấy phép</dt><dd><a href="https://www.bouncycastle.org/">Bouncy Castle Licence</a> (kiểu MIT) · © Legion of the Bouncy Castle Inc.</dd></dl></div>
+<div class="card"><div class="card-h"><h3>Gadgetbridge</h3><span class="tag">Chỉ bản web</span></div>
+<dl><dt>Dùng cho</dt><dd>Phần cài app Uni Call thẳng lên đồng hồ Xiaomi qua Bluetooth (khung gói tin, xác thực, gửi dữ liệu), được chuyển thể từ Gadgetbridge. Bản Google Play không có phần này.</dd>
+<dt>Giấy phép</dt><dd><a href="https://www.gnu.org/licenses/agpl-3.0.html">GNU AGPL 3.0</a> · © các tác giả Gadgetbridge (<a href="https://codeberg.org/Freeyourgadget/Gadgetbridge">codeberg.org/Freeyourgadget/Gadgetbridge</a>). Theo giấy phép này, người nhận bản web có quyền nhận mã nguồn tương ứng: gửi yêu cầu qua Gmail ở mục Liên hệ.</dd></dl></div>
+<div class="card"><div class="card-h"><h3>minstall</h3><span class="tag">Chỉ bản web</span></div>
+<dl><dt>Dùng cho</dt><dd>Trình tự các bước cài file .rpk lên đồng hồ Xiaomi.</dd>
+<dt>Giấy phép</dt><dd>MIT · © tác giả minstall (<a href="https://github.com/HyperionD/minstall">github.com/HyperionD/minstall</a>)</dd></dl></div>
+<div class="card"><div class="card-h"><h3>Xiaomi Wearable SDK</h3><span class="tag">App Android</span></div>
+<dl><dt>Dùng cho</dt><dd>Kênh trao đổi với app Uni Call trên đồng hồ thông qua Mi Fitness.</dd>
+<dt>Giấy phép</dt><dd>Thuộc Xiaomi, dùng theo điều khoản của Xiaomi dành cho nhà phát triển (không phải mã nguồn mở).</dd></dl></div>
+<div class="card"><div class="card-h"><h3>Material Icons</h3><span class="tag">Logo</span></div>
+<dl><dt>Dùng cho</dt><dd>Hình ống nghe trong logo Uni Call.</dd>
+<dt>Giấy phép</dt><dd><a href="https://www.apache.org/licenses/LICENSE-2.0">Apache License 2.0</a> · © Google</dd></dl></div>
+<div class="card"><div class="card-h"><h3>Noto Color Emoji</h3><span class="tag">App đồng hồ Xiaomi</span></div>
+<dl><dt>Dùng cho</dt><dd>Ảnh emoji hiện trong tin nhắn trên đồng hồ.</dd>
+<dt>Giấy phép</dt><dd><a href="https://openfontlicense.org/">SIL Open Font License 1.1</a> · © Google (<a href="https://github.com/googlefonts/noto-emoji">noto-emoji</a>)</dd></dl></div>
+<div class="card"><div class="card-h"><h3>es6-promise</h3><span class="tag">App đồng hồ Amazfit</span></div>
+<dl><dt>Giấy phép</dt><dd><a href="https://github.com/stefanpenner/es6-promise">MIT</a> · © Yehuda Katz, Tom Dale, Stefan Penner và cộng sự</dd></dl></div>
+<div class="card"><div class="card-h"><h3>Dữ liệu OpenStreetMap</h3><span class="tag">Bản đồ</span></div>
+<dl><dt>Ghi công</dt><dd>© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a></dd>
+<dt>Giấy phép</dt><dd><a href="https://opendatacommons.org/licenses/odbl/">Open Database License (ODbL) 1.0</a></dd></dl></div>
+<div class="card"><div class="card-h"><h3>Lược đồ OpenMapTiles</h3><span class="tag">Bản đồ</span></div>
+<dl><dt>Ghi công</dt><dd>© <a href="https://openmaptiles.org/">OpenMapTiles</a></dd>
+<dt>Giấy phép</dt><dd><a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></dd></dl></div>
+<div class="card"><div class="card-h"><h3>OpenFreeMap</h3><span class="tag">Chi tiết bản đồ</span></div>
+<dl><dt>Dùng cho</dt><dd>Tên đường, số nhà, nhà, khu đất, chiều đường (cả trong Việt Nam); ô bản đồ ngoài Việt Nam và dự phòng: <a href="https://openfreemap.org/">openfreemap.org</a>.</dd></dl></div>
+<div class="card"><div class="card-h"><h3>Planetiler</h3><span class="tag off">Công cụ, không nằm trong app</span></div>
+<dl><dt>Dùng cho</dt><dd>Dựng file bản đồ Việt Nam của Uni Call.</dd>
+<dt>Giấy phép</dt><dd><a href="https://github.com/onthegomap/planetiler">Apache License 2.0</a></dd></dl></div>
+<div class="card"><div class="card-h"><h3>Dịch vụ tìm kiếm và tìm đường</h3><span class="tag off">Dùng qua mạng</span></div>
+<dl><dt>Gồm</dt><dd>Photon (komoot), Nominatim (OpenStreetMap Foundation), BRouter, OSRM (FOSSGIS). Uni Call gọi các dịch vụ này qua mạng, không đóng gói mã của chúng trong app.</dd></dl></div>
+</div>
+</section>
+
+<section id="ban-do" class="sec">
+<h2>Bản đồ và chủ quyền</h2>
+<ul>
+<li>Bản đồ của Uni Call chỉ để dẫn đường: vẽ đường đi, tên đường, số nhà, chiều đường một chiều, đường ray, nhà, khu đất (trường học, bệnh viện, khu thương mại… chỉ tô màu, không ghi tên), sông hồ, công viên quanh vị trí của bạn, cùng vị trí camera giao thông và giới hạn tốc độ nếu dữ liệu OpenStreetMap có ghi.</li>
+<li>Chữ trên bản đồ chỉ có tên đường và số nhà. App không hiển thị tên địa danh, tên quốc gia, đường biên giới, địa giới hành chính hay ranh giới trên biển, và không dùng, không hiển thị “đường chín đoạn” (“đường lưỡi bò”) hay bất kỳ yêu sách lãnh thổ nào.</li>
+<li>Trong Việt Nam: nền bản đồ (đường, sông hồ, cây xanh) từ file do Uni Call làm từ dữ liệu OpenStreetMap, đã bỏ toàn bộ tên địa danh và đường ranh giới ngay từ dữ liệu; tên đường, số nhà, nhà, khu đất và chiều đường lấy thêm từ OpenFreeMap (cũng là dữ liệu OpenStreetMap). Tên có chữ Hán và mọi chữ trong khu vực Hoàng Sa, Trường Sa đều bị bỏ. Ngoài Việt Nam, hoặc khi chưa tải được file đó: app đọc dữ liệu từ OpenFreeMap và vẽ cùng những thứ trên.</li>
+<li><strong>Quần đảo Hoàng Sa và Quần đảo Trường Sa là lãnh thổ Việt Nam.</strong> Kết quả tìm địa điểm ở hai quần đảo được ghi theo địa danh Việt Nam (Hoàng Sa — Đà Nẵng, Trường Sa — Khánh Hoà), không hiện tên hay địa chỉ theo yêu sách của nước khác.</li>
+<li>Dòng “© OpenStreetMap” là điều kiện bắt buộc của giấy phép dữ liệu (ghi công người đóng góp), không phải quan điểm về chủ quyền. Bản đồ của app không phải bản đồ chính thức và không dùng để xác định biên giới hay chủ quyền.</li>
+</ul>
+</section>
+
+<section id="khong-duoc" class="sec">
+<h2>Những việc không được làm</h2>
+<ul class="no">
+<li>Dịch ngược, giải mã, gỡ làm rối hay trích xuất mã nguồn của Uni Call, trừ khi pháp luật cho phép rõ ràng.</li>
+<li>Sửa đổi file cài đặt hoặc app đồng hồ, ký lại, đóng gói lại, hay phát tán bản đã sửa. Uni Call tự kiểm tra chữ ký: bản bị sửa sẽ không chạy.</li>
+<li>Đưa Uni Call lên kho ứng dụng hay trang tải khác, bán lại, cho thuê, hoặc gắn quảng cáo vào.</li>
+<li>Gỡ bỏ thông báo bản quyền, ghi công giấy phép, hoặc dùng tên, logo Uni Call cho sản phẩm khác theo cách gây nhầm lẫn.</li>
+<li>Dùng Uni Call để quấy rối, gửi tin rác, theo dõi người khác, hoặc vi phạm điều khoản của Zalo, Messenger và các dịch vụ liên quan, hay vi phạm pháp luật.</li>
+<li>Dùng Uni Call để gửi yêu cầu hàng loạt hay tự động tới các dịch vụ bản đồ.</li>
+</ul>
+</section>
+
+<section id="phu-thuoc" class="sec">
+<h2>Uni Call dựa vào ứng dụng khác</h2>
+<ul>
+<li>Uni Call làm việc cùng Zalo, Messenger, Google Maps, Mi Fitness, Zepp và nhiều app khác. Các app này có thể thay đổi bất cứ lúc nào, khiến một số tính năng chậm, sai hoặc ngừng chạy cho tới khi Uni Call được cập nhật.</li>
+<li>Uni Call đang ở giai đoạn phát hành sớm (bản Demo). App có thể báo chậm hoặc sót.</li>
+<li>Bản đồ và đường đi có thể khác Google Maps hoặc thực tế. Khi lái xe, hãy nhìn đường và theo biển báo.</li>
+<li>Biển giới hạn tốc độ và báo camera chỉ để tham khảo: lấy từ dữ liệu cộng đồng OpenStreetMap, chưa có ở nhiều đoạn đường và có thể sai hoặc cũ. Không có biển trên đồng hồ không có nghĩa là đường không giới hạn tốc độ. Luôn theo biển báo thật trên đường; Uni Call không chịu trách nhiệm về vi phạm hay mức phạt.</li>
+<li>Đừng dựa vào Uni Call cho việc khẩn cấp hay việc liên quan tới an toàn tính mạng.</li>
+</ul>
+</section>
+
+<section id="mien-tru" class="sec">
+<h2>Miễn trừ bảo đảm và giới hạn trách nhiệm</h2>
+<ul>
+<li>Uni Call được cung cấp “nguyên trạng” và “tuỳ khả năng sẵn có”, không kèm bất kỳ bảo đảm nào, rõ ràng hay ngụ ý, về độ chính xác, tính liên tục hay sự phù hợp cho một mục đích cụ thể.</li>
+<li>Trong phạm vi pháp luật cho phép, tác giả không chịu trách nhiệm về thiệt hại trực tiếp hay gián tiếp, cuộc gọi nhỡ, tin nhắn bị sót, sai đường, mất dữ liệu hay chi phí phát sinh khi dùng Uni Call.</li>
+<li>Không điều nào ở đây loại trừ trách nhiệm mà pháp luật Việt Nam không cho phép loại trừ.</li>
+</ul>
+</section>
+
+<section id="ngung" class="sec">
+<h2>Ngừng sử dụng</h2>
+<ul>
+<li>Bạn có thể ngừng dùng bất cứ lúc nào bằng cách gỡ app.</li>
+<li>Nếu bạn vi phạm điều khoản này, quyền sử dụng Uni Call của bạn chấm dứt; khi đó hãy gỡ app và xoá các bản sao.</li>
+<li>Chúng tôi có thể thay đổi, tạm dừng hoặc ngừng phát triển Uni Call.</li>
+</ul>
+</section>
+
+<section id="luat" class="sec">
+<h2>Luật áp dụng</h2>
+<ul>
+<li>Điều khoản này được điều chỉnh bởi pháp luật nước Cộng hoà xã hội chủ nghĩa Việt Nam.</li>
+<li>Tranh chấp trước hết được giải quyết bằng thương lượng thiện chí qua kênh liên hệ dưới đây; nếu không thành, các bên có thể đưa ra toà án có thẩm quyền tại Việt Nam.</li>
+<li>Nếu một điều khoản bị coi là vô hiệu, các điều khoản còn lại vẫn giữ hiệu lực.</li>
+<li>Nếu bản tiếng Việt và bản tiếng Anh khác nhau, bản tiếng Việt được ưu tiên.</li>
+</ul>
+</section>
+
+<section id="bao-cao" class="sec">
+<h2>Báo cáo vi phạm</h2>
+<p>Nếu bạn là chủ sở hữu và cho rằng Uni Call dùng nội dung của bạn chưa được phép, hoặc bạn thấy một bản Uni Call bị sửa đổi, mạo danh đang được phát tán, hãy gửi Gmail cho chúng tôi kèm:</p>
+<ul>
+<li>bạn là ai và cách liên hệ lại;</li>
+<li>nội dung nào bị dùng, ở đâu trong Uni Call (hoặc đường dẫn tới bản mạo danh);</li>
+<li>giấy tờ hay bằng chứng cho thấy bạn có quyền với nội dung đó.</li>
+</ul>
+</section>
+
+<section id="thay-doi" class="sec">
+<h2>Thay đổi điều khoản</h2>
+<ul>
+<li>Bản mới được đăng tại đúng địa chỉ này với ngày hiệu lực mới; thay đổi quan trọng được báo trong app.</li>
+</ul>
+<ul class="history">
+<li><strong>28/10/2026</strong> — Thêm mục Phí và thanh toán; ghi công Gadgetbridge (AGPL-3.0) và minstall cho phần cài thẳng của bản web; nêu bản web là kênh phát hành chính thức.</li>
+<li><strong>14/10/2026</strong> — Bản đầu tiên, áp dụng cho Uni Call 1.0.1.</li>
+</ul>
+</section>
+
+<section id="lien-he" class="sec">
+<h2>Liên hệ</h2>
+<div class="contact">
+<a class="c" href="mailto:buiduongquoc71@gmail.com"><span class="k">Gmail</span><span class="v">buiduongquoc71@gmail.com</span></a>
+</div>
+<p class="muted small">Xem thêm <a href="../../privacy-policy/vi/index.html">Chính sách quyền riêng tư</a>.</p>
+</section>
+
+</main></div>
+<footer class="foot"><div class="wrap foot-in">
+<div><p>© 2026 Bùi Dương Quốc · Uni Call. Mọi quyền được bảo lưu, trừ phần thuộc bên thứ ba.</p><p>Trang tĩnh: không cookie, không mã theo dõi, không tải tài nguyên từ nơi khác. Trang được lưu trên GitHub Pages; GitHub có thể ghi nhật ký truy cập theo chính sách của GitHub.</p></div>
+<div class="foot-links"><a href="../../index.html">Trang tài liệu</a><a href="#top">Lên đầu trang</a></div>
+</div></footer>
+</body>
+</html>
