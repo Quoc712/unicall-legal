@@ -206,7 +206,7 @@ main{min-width:0}
 <p>Uni Call runs on your own phone. Uni Call has no servers of its own, so there is no place on our side that receives your calls, messages, contacts or location.</p>
 <div class="tiles">
 <div class="tile tile-keep"><p class="tile-k"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="2.5" width="12" height="19" rx="3" fill="none" stroke="currentColor" stroke-width="2"/><path d="M10 18h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Stays on the phone</p><p>Caller names, message text, turn instructions and location are handled in temporary memory to reach your watch, then dropped.</p></div>
-<div class="tile tile-out"><p class="tile-k"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h11M12 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Leaves only when needed</p><p>Search text, start and destination points and map areas go to map services; your voice when replying goes to the phone's speech recogniser; a bug report leaves only when you send it. Details under <a href="#leaves">Data that leaves your phone</a>.</p></div>
+<div class="tile tile-out"><p class="tile-k"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h11M12 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Leaves only when needed</p><p>Search text, start and destination points and map areas go to map services; your voice when replying goes to the phone's speech recogniser (web edition only); a bug report leaves only when you send it. Details under <a href="#leaves">Data that leaves your phone</a>.</p></div>
 <div class="tile tile-never"><p class="tile-k"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M6 18L18 6" stroke="currentColor" stroke-width="2"/></svg>Never</p><p>No account, no ads, no analytics or tracking tools, no selling of data, no call recording.</p></div>
 </div>
 </section>
@@ -215,7 +215,7 @@ main{min-width:0}
 <h2>What Uni Call is and who makes it</h2>
 <ul>
 <li><strong>Uni Call</strong> is an Android app (package <span class="mono">app.unicall.watch</span>) that brings calls, messages and turn-by-turn directions from your phone to your smartwatch.</li>
-<li>It consists of the phone app, a Uni Call watch app for Xiaomi / Redmi watches running Vela (bundled inside the installer), and a Uni Call watch app for Amazfit (Zepp OS). Other watches (Wear OS, Galaxy Watch, Garmin, Huawei…) receive alerts as notification cards or on the watch's own call screen.</li>
+<li>It consists of the phone app, a Uni Call watch app for Xiaomi / Redmi watches running Vela, except Watch S3 (bundled inside the installer), and a Uni Call watch app for Amazfit (Zepp OS). Other watches (Wear OS, Galaxy Watch, Garmin, Huawei…) receive alerts as notification cards or on the watch's own call screen.</li>
 <li>Uni Call is made by <span class="dev">Bùi Dương Quốc</span>, an individual developer based in Vietnam (“we” on this page). Uni Call comes in two editions built from the same source: the <strong>Google Play edition</strong> and the <strong>web edition</strong>. The Google Play edition charges for some features through the Uni Call Premium subscription; the web edition is free with every feature. Apart from that, only the web edition asks for “Allow all the time” location and the Microphone permission (speak to reply). Each difference is marked in the sections below. It is an independent project, not owned by or affiliated with Zalo (VNG), Meta, LINE, Google, Samsung, Xiaomi, Huawei, Zepp Health or Garmin.</li>
 <li>This policy covers the apps above and this website.</li>
 </ul>
@@ -280,7 +280,7 @@ main{min-width:0}
 <div class="card-h"><h3>Nearby devices (Bluetooth)</h3><span class="tag">Watch connection</span></div>
 <dl>
 <dt>Used to</dt><dd>List watches that are already paired and check whether the watch is connected for Bluetooth calls. When you choose to install, check or remove the Uni Call app on a Xiaomi watch, the app connects over Bluetooth directly to that already-paired watch.</dd>
-<dt>If you say no</dt><dd>The app cannot pick a watch to link and cannot warn you when the watch loses its call connection.</dd>
+<dt>If you say no</dt><dd>You pick your watch by hand; the app can't warn when the watch loses its call connection or install / check / remove the Uni Call app on a Xiaomi watch.</dd>
 </dl>
 <p class="note">Uni Call does not scan for nearby devices, does not pair new devices and does not use Bluetooth to find your location.</p>
 </div>
@@ -309,7 +309,7 @@ main{min-width:0}
 <dt>Used to</dt><dd>Only to keep sending the phone's position to the map and turn guidance on your watch while the phone screen is locked during navigation. When the trip ends, the app stops using location.</dd>
 <dt>If you say no</dt><dd>Everything works while the phone screen is on; when the phone locks, the watch map stops following the phone's position (a watch with GPS can still follow on its own).</dd>
 </dl>
-<p class="note">Never used to track you outside navigation. Location is not stored and not sent to any server of ours.</p>
+<p class="note">Never used to track you outside navigation. Location is not stored and not sent to any server of ours. The Google Play edition has no such permission: while the phone is locked, choose the “Watch” location source if your watch has GPS.</p>
 </div>
 
 <div class="card">
@@ -342,7 +342,7 @@ main{min-width:0}
 <div class="card-h"><h3>Installing, checking and removing the Uni Call app on a Xiaomi watch</h3><span class="tag opt">Optional · both editions</span></div>
 <dl>
 <dt>Used to</dt><dd>The watch app files are bundled in the Uni Call installer, not downloaded from a server. Uni Call sends the file straight to the watch over Bluetooth (see below); the app does not save it to your phone's storage.</dd>
-<dt>Direct install over Bluetooth</dt><dd>Available in both editions (in the Google Play edition this part is an independent implementation). It runs only when you start it. You pick a log export that you made yourself in Mi Fitness. Uni Call reads that file on the phone only to find your own watch's device key, then uses the key to connect over Bluetooth to your already-paired watch and send the app. Depending on the app version, the same flow can also check the Uni Call app on the watch and remove it.</dd>
+<dt>Direct install over Bluetooth</dt><dd>Available in both editions (in the Google Play edition this part is an independent implementation). It runs only when you start it. You pick a log export that you made yourself in Mi Fitness. Uni Call reads that file on the phone only to find your own watch's device key, then uses the key to connect over Bluetooth to your already-paired watch and send the app. The Google Play edition can also check and remove the Uni Call watch app; the web edition only installs it.</dd>
 <dt>Removing the app</dt><dd>Removes only the Uni Call watch app; other apps, watch faces and data on the watch are not touched.</dd>
 <dt>Not done</dt><dd>The log file is not stored. The device key stays in memory only while the task runs: it is never stored, logged or sent anywhere. No Bluetooth scanning and no location permission; the app connects only to the watch you already paired.</dd>
 <dt>Other watch brands</dt><dd>For Amazfit, Huawei, Wear OS and others, apps are installed and removed through the watch maker's own app.</dd>
@@ -455,7 +455,7 @@ main{min-width:0}
 <ul>
 <li>The Google Play edition offers an optional subscription, <strong>Uni Call Premium</strong>: monthly at 19,000 ₫ and yearly at 99,000 ₫ (prices in Vietnam; Google Play shows the price for your region before you confirm). The web edition has no subscription and offers every feature for free.</li>
 <li>Call alerts and turn-by-turn directions stay free: the call alert with the caller's name, the watch ringing like a real call, the Decline button on the watch and Google Maps / Petal Maps turn-by-turn directions on the watch (arrow, distance, street, arrival time, a buzz before each turn) work without Premium. Premium adds the Answer and Hang up buttons on the watch, recent calls on the watch, decline with a message (the quick reply you pick is sent through the chat app's own notification reply button, only when that app allows it — Uni Call never sends messages any other way), messages and quick replies on the watch, the map image on the watch, “Go to” (<i lang="vi">Đi đến</i>) route planning, and the map and place search in the phone app.</li>
-<li>When Premium ends (the subscription expires or is cancelled, or the trial runs out), those features stop and the message list on the watch is cleared. Call alerts and the Decline button keep working as usual.</li>
+<li>When Premium ends (the subscription expires or is cancelled, or the trial runs out), those features stop and the message list on the watch is cleared. Call alerts, the Decline button and turn-by-turn directions keep working as usual.</li>
 <li>Buying, renewing, cancelling and refunds are handled entirely by Google Play under Google's policies. Uni Call never receives, sees or stores your card number, bank account, e-wallet or any other payment details; the app only asks Google Play whether the subscription is active.</li>
 <li><strong>Google Play 7-day free trial:</strong> each plan (monthly, yearly) may come with a 7-day free trial for Google accounts that have never had Uni Call Premium. You need to be signed in to Google Play with a Google account; each Google account can use the trial only once, and Google Play enforces this. When the 7 days end, the subscription renews automatically at the plan price (19,000 ₫/month or 99,000 ₫/year) unless you cancel in Google Play before the trial ends; cancelling during the trial costs nothing. Uni Call itself stores no trial data.</li>
 <li>The Premium status stays on the phone and is never sent to the developer.</li>
@@ -470,7 +470,7 @@ main{min-width:0}
 <li>No advertising. The Google Play edition's Premium subscription is paid only through Google Play; Uni Call never receives payment details (see <a href="#premium">Premium subscription</a>).</li>
 <li>No analytics, measurement, tracking or automatic crash-reporting tools.</li>
 <li>No selling, renting or trading of your data with anyone.</li>
-<li>No listening to or recording of calls; the microphone is used only while you speak a reply.</li>
+<li>No listening to or recording of calls; the microphone is used only in the web edition, while you speak a reply.</li>
 <li>No use of Accessibility to read the screen.</li>
 <li>No scanning for nearby Bluetooth devices; the app connects only to the watch you paired.</li>
 <li>No uploading of contacts, messages or call history.</li>
@@ -509,7 +509,7 @@ main{min-width:0}
 <li>The port for the Zepp app is open only inside the phone (127.0.0.1), requires pairing with a code shown on the phone, and uses a private access token.</li>
 <li>The Uni Call contacts account has no password and is never synced online.</li>
 <li>The app checks its own signature: a copy that was modified and re-signed will not run, to protect your calls, messages and contacts. Install Uni Call from Google Play or the official release page; copies shared elsewhere are not supported.</li>
-<li>No system is perfectly secure. If you find a vulnerability, please report it to us privately by Gmail.</li>
+<li>No system is perfectly secure. If you find a vulnerability, please report it to us privately by email.</li>
 </ul>
 </section>
 
@@ -565,7 +565,7 @@ main{min-width:0}
 <h2>Contact</h2>
 <p>For privacy questions, deletion requests or security reports, reach us at:</p>
 <div class="contact">
-<a class="c" href="mailto:buiduongquoc71@gmail.com"><span class="k">Gmail</span><span class="v">buiduongquoc71@gmail.com</span></a>
+<a class="c" href="mailto:buiduongquoc71@gmail.com"><span class="k">Email</span><span class="v">buiduongquoc71@gmail.com</span></a>
 </div>
 <p class="muted small">In the app: Settings › Support (<i lang="vi">Cài đặt › Hỗ trợ</i>) › Mail. The app is available in Vietnamese and English; Vietnamese labels are shown in italics on this page. The Vietnamese version of this policy is the reference text. See also <a href="../../terms/en/index.html">Intellectual property &amp; terms</a>.</p>
 </section>
