@@ -199,7 +199,7 @@ main{min-width:0}
 <nav class="docnav" aria-label="Documents"><a href="../../privacy-policy/en/index.html" aria-current="page">Privacy</a><a href="../../terms/en/index.html">Intellectual property<span class="hide-sm"> &amp; terms</span></a></nav>
 <nav class="lang" aria-label="Language"><a href="../vi/index.html" hreflang="vi" lang="vi">VI</a><a href="index.html" hreflang="en" lang="en" aria-current="true">EN</a></nav>
 </div></header>
-<div class="hero"><div class="wrap"><p class="eyebrow">Uni Call · phone &amp; watch</p><h1>Privacy Policy</h1><p class="lede">Your calls, messages and directions are handled on your own phone so they can reach your watch. This page explains what Uni Call touches, why, and what never leaves the device.</p><ul class="chips"><li>Effective 31/10/2026</li><li>Covers Uni Call 1.0.1</li><li>Version 3</li></ul></div></div>
+<div class="hero"><div class="wrap"><p class="eyebrow">Uni Call · phone &amp; watch</p><h1>Privacy Policy</h1><p class="lede">Your calls, messages and directions are handled on your own phone so they can reach your watch. This page explains what Uni Call touches, why, and what never leaves the device.</p><ul class="chips"><li>Effective 01/11/2026</li><li>Covers Uni Call 1.0.1</li><li>Version 4</li></ul></div></div>
 <div class="wrap layout"><aside class="toc toc-side" aria-label="On this page"><p class="toc-title">On this page</p><ol><li><a href="#summary">The one-minute version</a></li><li><a href="#about">What Uni Call is and who makes it</a></li><li><a href="#principles">Our four principles</a></li><li><a href="#permissions">What each permission is for</a></li><li><a href="#on-device">Data stored on your phone</a></li><li><a href="#leaves">Data that leaves your phone</a></li><li><a href="#bug-report">Bug reports</a></li><li><a href="#premium">Premium subscription</a></li><li><a href="#never">What Uni Call does not do</a></li><li><a href="#retention">Keeping and deleting data</a></li><li><a href="#children">Children</a></li><li><a href="#security">Security</a></li><li><a href="#third-parties">Third-party services</a></li><li><a href="#your-rights">Your rights</a></li><li><a href="#changes">When this policy changes</a></li><li><a href="#contact">Contact</a></li></ol></aside><details class="toc toc-mob"><summary>Contents</summary><ol><li><a href="#summary">The one-minute version</a></li><li><a href="#about">What Uni Call is and who makes it</a></li><li><a href="#principles">Our four principles</a></li><li><a href="#permissions">What each permission is for</a></li><li><a href="#on-device">Data stored on your phone</a></li><li><a href="#leaves">Data that leaves your phone</a></li><li><a href="#bug-report">Bug reports</a></li><li><a href="#premium">Premium subscription</a></li><li><a href="#never">What Uni Call does not do</a></li><li><a href="#retention">Keeping and deleting data</a></li><li><a href="#children">Children</a></li><li><a href="#security">Security</a></li><li><a href="#third-parties">Third-party services</a></li><li><a href="#your-rights">Your rights</a></li><li><a href="#changes">When this policy changes</a></li><li><a href="#contact">Contact</a></li></ol></details><main id="main">
 <section id="summary" class="sec">
 <h2>The one-minute version</h2>
@@ -216,7 +216,7 @@ main{min-width:0}
 <ul>
 <li><strong>Uni Call</strong> is an Android app (package <span class="mono">app.unicall.watch</span>) that brings calls, messages and turn-by-turn directions from your phone to your smartwatch.</li>
 <li>It consists of the phone app, a Uni Call watch app for Xiaomi / Redmi watches running Vela (bundled inside the installer), and a Uni Call watch app for Amazfit (Zepp OS). Other watches (Wear OS, Galaxy Watch, Garmin, Huawei…) receive alerts as notification cards or on the watch's own call screen.</li>
-<li>Uni Call is made by <span class="dev">Bùi Dương Quốc</span>, an individual developer based in Vietnam (“we” on this page). Uni Call comes in two editions built from the same source: the <strong>Google Play edition</strong> and the <strong>web edition</strong>. They are identical except for two points, marked in the sections below: only the web edition asks for “Allow all the time” location and offers direct install of the Xiaomi watch app. It is an independent project, not owned by or affiliated with Zalo (VNG), Meta, LINE, Google, Samsung, Xiaomi, Huawei, Zepp Health or Garmin.</li>
+<li>Uni Call is made by <span class="dev">Bùi Dương Quốc</span>, an individual developer based in Vietnam (“we” on this page). Uni Call comes in two editions built from the same source: the <strong>Google Play edition</strong> and the <strong>web edition</strong>. The Google Play edition charges for some features through the Uni Call Premium subscription; the web edition is free with every feature. Apart from that, only the web edition asks for “Allow all the time” location and the Microphone permission (speak to reply). Each difference is marked in the sections below. It is an independent project, not owned by or affiliated with Zalo (VNG), Meta, LINE, Google, Samsung, Xiaomi, Huawei, Zepp Health or Garmin.</li>
 <li>This policy covers the apps above and this website.</li>
 </ul>
 </section>
@@ -226,7 +226,7 @@ main{min-width:0}
 <ol class="principles">
 <li><strong>On the device first</strong>If something can be done on the phone, it is not sent anywhere.</li>
 <li><strong>Ask at the right time</strong>Each permission belongs to a feature. If you do not use a feature, you do not need to grant its permission.</li>
-<li><strong>Send as little as possible</strong>When the network is unavoidable (routing, map download), only what that service needs is sent.</li>
+<li><strong>Send as little as possible</strong>When the network is unavoidable (place search, routing, map tiles), only what that service needs is sent.</li>
 <li><strong>You hold the off switch</strong>Turning features off, revoking permissions and deleting data can all be done on the phone.</li>
 </ol>
 </section>
@@ -279,10 +279,10 @@ main{min-width:0}
 <div class="card">
 <div class="card-h"><h3>Nearby devices (Bluetooth)</h3><span class="tag">Watch connection</span></div>
 <dl>
-<dt>Used to</dt><dd>List watches that are already paired and check whether the watch is connected for Bluetooth calls.</dd>
+<dt>Used to</dt><dd>List watches that are already paired and check whether the watch is connected for Bluetooth calls. When you choose to install, check or remove the Uni Call app on a Xiaomi watch, the app connects over Bluetooth directly to that already-paired watch.</dd>
 <dt>If you say no</dt><dd>The app cannot pick a watch to link and cannot warn you when the watch loses its call connection.</dd>
 </dl>
-<p class="note">Uni Call does not scan for or pair new devices.</p>
+<p class="note">Uni Call does not scan for nearby devices, does not pair new devices and does not use Bluetooth to find your location.</p>
 </div>
 
 <div class="card">
@@ -339,11 +339,13 @@ main{min-width:0}
 </div>
 
 <div class="card">
-<div class="card-h"><h3>Installing the Uni Call app on a Xiaomi watch</h3><span class="tag opt">Optional</span></div>
+<div class="card-h"><h3>Installing, checking and removing the Uni Call app on a Xiaomi watch</h3><span class="tag opt">Optional · both editions</span></div>
 <dl>
 <dt>Used to</dt><dd>The watch app files are bundled in the Uni Call installer, not downloaded from a server. You can save the file to your phone's storage (you choose where) and install it yourself with Mi Fitness or AstroBox.</dd>
-<dt>Direct install (web edition only)</dt><dd>You pick the log file that Mi Fitness saved on your phone. Uni Call looks in that file for your watch's pairing key, and uses it to connect to the watch over Bluetooth and send the app.</dd>
-<dt>Not done</dt><dd>The log file and the pairing key are not stored (they stay in memory only while installing) and are not sent anywhere.</dd>
+<dt>Direct install over Bluetooth</dt><dd>Available in both editions (in the Google Play edition this part is an independent implementation). It runs only when you start it. You pick a log export that you made yourself in Mi Fitness. Uni Call reads that file on the phone only to find your own watch's device key, then uses the key to connect over Bluetooth to your already-paired watch and send the app. Depending on the app version, the same flow can also check the Uni Call app on the watch and remove it.</dd>
+<dt>Removing the app</dt><dd>Removes only the Uni Call watch app; other apps, watch faces and data on the watch are not touched.</dd>
+<dt>Not done</dt><dd>The log file is not stored. The device key stays in memory only while the task runs: it is never stored, logged or sent anywhere. No Bluetooth scanning and no location permission; the app connects only to the watch you already paired.</dd>
+<dt>Other watch brands</dt><dd>For Amazfit, Huawei, Wear OS and others, apps are installed and removed through the watch maker's own app.</dd>
 </dl>
 </div>
 
@@ -362,7 +364,7 @@ main{min-width:0}
 <li>Technical notes without names or content: where the Answer / Decline buttons sit in each app's notification, which call notification channels were recognised, a few timestamps.</li>
 <li>A cache of map tiles (kept for up to about 14 days), to avoid downloading again. These reveal which areas you have opened on the map.</li>
 <li>The pairing token for the Uni Call app on an Amazfit watch.</li>
-<li>Google Play edition: whether Premium is active, and the expiry date of a trial key if you entered one. No card or payment details.</li>
+<li>Google Play edition: whether Premium is active (and whether it is the monthly or yearly plan, if bought on this phone); if you entered a trial key: that a trial was used on this phone, and its start and end dates. The trial key itself is not stored; no card or payment details.</li>
 <li>A bug-report file, only when you tap “Send bug report” (<i lang="vi">Gửi báo lỗi</i>): created in the app's private cache so you can send it.</li>
 </ul>
 </div>
@@ -411,8 +413,13 @@ main{min-width:0}
 </div></div>
 <div class="flow"><div>
 <h3>When content goes to your watch</h3>
-<dl><dt>Sent</dt><dd>Caller names, message text, turn instructions, map images, and your position while navigating.</dd>
+<dl><dt>Sent</dt><dd>Caller names, message text, turn instructions, map images, and your position while navigating. Map images are drawn by the phone itself from OpenFreeMap / OpenStreetMap map data (the map tiles above) and sent to your own watch. The map zoom slider and the automatic zoom-in near turns only change which area is drawn; apart from those map tile requests, no extra data leaves the phone.</dd>
 <dt>To</dt><dd>Your watch, over Bluetooth and through the watch maker's app on the phone (Mi Fitness, Zepp, Galaxy Wearable / Wear OS, Garmin Connect, Huawei Health…). For Amazfit, the Zepp app fetches data from Uni Call through a port that is open only inside the phone (127.0.0.1); other devices on the network cannot see it.</dd></dl>
+</div></div>
+<div class="flow"><div>
+<h3>When you install, check or remove the Uni Call app on a Xiaomi watch</h3>
+<dl><dt>Sent</dt><dd>The Uni Call watch app file (when installing), or the commands to list apps and to remove the Uni Call app. The app list returned by the watch is used on the phone only to find the Uni Call app.</dd>
+<dt>To</dt><dd>Only the Xiaomi watch you have paired, directly over Bluetooth. Not over the Internet and not through any server. The Mi Fitness log file and the device key never leave the phone.</dd></dl>
 </div></div>
 <div class="flow"><div>
 <h3>When you send a bug report</h3>
@@ -446,10 +453,12 @@ main{min-width:0}
 <section id="premium" class="sec">
 <h2>Premium subscription (Google Play edition)</h2>
 <ul>
-<li>The Google Play edition offers an optional subscription, <strong>Uni Call Premium</strong>. Calls on the watch (caller name, answer, decline, hang up) and the recent calls list work without Premium. Premium adds messages and replies on the watch, Google Maps directions, “Go to” (<i lang="vi">Đi đến</i>) routes and the map on the watch. The web edition has no subscription.</li>
-<li>Buying, renewing, cancelling and refunds are handled entirely by Google Play under Google's policies. Uni Call never receives, sees or stores your card number, bank account, e-wallet or any other payment details.</li>
-<li>On the phone, Uni Call stores only whether Premium is active and, if you enter a trial key, the key's expiry date. This is never sent to the developer.</li>
-<li>Trial keys are given out free by the author and are never sold.</li>
+<li>The Google Play edition offers an optional subscription, <strong>Uni Call Premium</strong>: monthly at 19,000 ₫ and yearly at 99,000 ₫ (prices in Vietnam; Google Play shows the price for your region before you confirm). The web edition has no subscription and offers every feature for free.</li>
+<li>Calls stay free: calls on the watch (caller name, answer, decline, hang up) and the recent calls list work without Premium. Premium adds messages and quick replies on the watch, Google Maps directions on the watch, the map image on the watch, “Go to” (<i lang="vi">Đi đến</i>) route planning, and the map and place search in the phone app.</li>
+<li>When Premium ends (the subscription expires or is cancelled, or the trial runs out), those features stop and the message list on the watch is cleared. Calls keep working as usual.</li>
+<li>Buying, renewing, cancelling and refunds are handled entirely by Google Play under Google's policies. Uni Call never receives, sees or stores your card number, bank account, e-wallet or any other payment details; the app only asks Google Play whether the subscription is active.</li>
+<li><strong>7-day trial keys:</strong> given out free by the developer only and never sold. One trial per phone. Keys are checked on the phone itself, with no network and no server. The app stores only that a trial was used and its start and end dates; the key itself is not stored.</li>
+<li>The Premium status and trial details stay on the phone and are never sent to the developer.</li>
 <li>To cancel: Google Play › Payments &amp; subscriptions. Uninstalling the app or clearing its data only removes the status stored on the phone; it does not cancel the subscription.</li>
 </ul>
 </section>
@@ -463,6 +472,7 @@ main{min-width:0}
 <li>No selling, renting or trading of your data with anyone.</li>
 <li>No listening to or recording of calls; the microphone is used only while you speak a reply.</li>
 <li>No use of Accessibility to read the screen.</li>
+<li>No scanning for nearby Bluetooth devices; the app connects only to the watch you paired.</li>
 <li>No uploading of contacts, messages or call history.</li>
 <li>No location requests when you are not using maps or directions.</li>
 </ul>
@@ -495,7 +505,7 @@ main{min-width:0}
 <li>Uni Call has no servers, accounts or passwords, so there is no store of user data to leak.</li>
 <li>In release builds, technical logs replace caller names, phone numbers and content with “(hidden)”, including in bug reports.</li>
 <li>The parts of the app the system calls into (notification access, calling service, call observer, contacts account) are protected by Android system permissions; other apps cannot call them directly.</li>
-<li>The watch pairing key (web edition only, during direct install) stays in memory only while installing and is never written anywhere.</li>
+<li>The watch's device key (both editions, when installing, checking or removing the Uni Call app on a Xiaomi watch) stays in memory only while the task runs: it is never stored, logged or sent anywhere.</li>
 <li>The port for the Zepp app is open only inside the phone (127.0.0.1), requires pairing with a code shown on the phone, and uses a private access token.</li>
 <li>The Uni Call contacts account has no password and is never synced online.</li>
 <li>The app checks its own signature: a copy that was modified and re-signed will not run, to protect your calls, messages and contacts. Install Uni Call from Google Play or the official release page; copies shared elsewhere are not supported.</li>
@@ -541,6 +551,7 @@ main{min-width:0}
 <li>Important changes (for example, a new kind of data leaving the phone) will be announced in the app, which will ask for your consent again.</li>
 </ul>
 <ul class="history">
+<li><strong>01/11/2026</strong> — Premium subscription: lists the monthly and yearly prices; Premium now also covers the in-app map and place search; the message list on the watch is cleared when Premium ends; explains 7-day trial keys (free, one per phone, checked on the phone, only start and end dates stored). Installing the Uni Call app on Xiaomi watches over Bluetooth is now in both editions, with checking and removing the app; the device key is never stored, logged or sent; no Bluetooth scanning. Explains that the watch map image is drawn on the phone.</li>
 <li><strong>31/10/2026</strong> — Added Premium subscription (Google Play edition): payment handled entirely by Google Play; the app stores only the Premium status and the trial-key expiry date on the phone.</li>
 <li><strong>28/10/2026</strong> — Explains how the Google Play and web editions differ; adds saving the watch app file; states that direct install reads the watch pairing key; lists the two watch-maker libraries; removes the Telegram channel.</li>
 <li><strong>14/10/2026</strong> — First version, covering Uni Call 1.0.1.</li>
